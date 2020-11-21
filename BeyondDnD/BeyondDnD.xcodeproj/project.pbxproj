@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F65E2B99256831B100FB6542 /* BeyondDnD.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2B8B256831B100FB6542 /* BeyondDnD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BC7256831EC00FB6542 /* DnDBCharacterValue.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BA5256831EB00FB6542 /* DnDBCharacterValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BC8256831EC00FB6542 /* DnDBCharacterCustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BA6256831EB00FB6542 /* DnDBCharacterCustomItem.m */; };
+		F65E2BC9256831EC00FB6542 /* DnDBCharacterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BA7256831EB00FB6542 /* DnDBCharacterProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BCA256831EC00FB6542 /* DnDBCharacterValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BA8256831EB00FB6542 /* DnDBCharacterValue.m */; };
+		F65E2BCB256831EC00FB6542 /* DnDBInventoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BA9256831EB00FB6542 /* DnDBInventoryItem.m */; };
+		F65E2BCC256831EC00FB6542 /* DnDBSpellSlot.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BAA256831EB00FB6542 /* DnDBSpellSlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BCD256831EC00FB6542 /* DnDBCurrencies.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BAB256831EC00FB6542 /* DnDBCurrencies.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BCE256831EC00FB6542 /* DnDBCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BAC256831EC00FB6542 /* DnDBCharacter.m */; };
+		F65E2BCF256831EC00FB6542 /* DnDBStat.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BAD256831EC00FB6542 /* DnDBStat.m */; };
+		F65E2BD0256831EC00FB6542 /* DnDBDefaultBackdrop.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BAE256831EC00FB6542 /* DnDBDefaultBackdrop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BD1256831EC00FB6542 /* DnDBCampaign.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BAF256831EC00FB6542 /* DnDBCampaign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BD2256831EC00FB6542 /* DnDBInventoryItemDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BB0256831EC00FB6542 /* DnDBInventoryItemDefinition.m */; };
+		F65E2BD3256831EC00FB6542 /* DnDBCharacterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BB1256831EC00FB6542 /* DnDBCharacterProxy.m */; };
+		F65E2BD4256831EC00FB6542 /* DnDBModifiers.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BB2256831EC00FB6542 /* DnDBModifiers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BD5256831EC00FB6542 /* DnDBModifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BB3256831EC00FB6542 /* DnDBModifiers.m */; };
+		F65E2BD6256831EC00FB6542 /* DnDBBackground.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BB4256831EC00FB6542 /* DnDBBackground.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BD7256831EC00FB6542 /* DnDBCharacterCustomItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BB5256831EC00FB6542 /* DnDBCharacterCustomItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BD8256831EC00FB6542 /* DnDBSpellSlot.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BB6256831EC00FB6542 /* DnDBSpellSlot.m */; };
+		F65E2BD9256831EC00FB6542 /* DnDBThemeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BB7256831EC00FB6542 /* DnDBThemeColor.m */; };
+		F65E2BDA256831EC00FB6542 /* DnDBInventoryItemDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BB8256831EC00FB6542 /* DnDBInventoryItemDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BDB256831EC00FB6542 /* DnDBThemeColor.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BB9256831EC00FB6542 /* DnDBThemeColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BDC256831EC00FB6542 /* DnDBCampaign.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BBA256831EC00FB6542 /* DnDBCampaign.m */; };
+		F65E2BDD256831EC00FB6542 /* DnDBClass.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BBB256831EC00FB6542 /* DnDBClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BDE256831EC00FB6542 /* DnDBCharacter.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BBC256831EC00FB6542 /* DnDBCharacter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BDF256831EC00FB6542 /* DnDBRace.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BBD256831EC00FB6542 /* DnDBRace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BE0256831EC00FB6542 /* DnDBCurrencies.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BBE256831EC00FB6542 /* DnDBCurrencies.m */; };
+		F65E2BE1256831EC00FB6542 /* DnDBClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BBF256831EC00FB6542 /* DnDBClass.m */; };
+		F65E2BE2256831EC00FB6542 /* DnDBStat.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BC0256831EC00FB6542 /* DnDBStat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BE3256831EC00FB6542 /* DnDBDeathSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BC1256831EC00FB6542 /* DnDBDeathSaves.m */; };
+		F65E2BE4256831EC00FB6542 /* DnDBInventoryItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BC2256831EC00FB6542 /* DnDBInventoryItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BE5256831EC00FB6542 /* DnDBBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BC3256831EC00FB6542 /* DnDBBackground.m */; };
+		F65E2BE6256831EC00FB6542 /* DnDBDefaultBackdrop.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BC4256831EC00FB6542 /* DnDBDefaultBackdrop.m */; };
+		F65E2BE7256831EC00FB6542 /* DnDBRace.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BC5256831EC00FB6542 /* DnDBRace.m */; };
+		F65E2BE8256831EC00FB6542 /* DnDBDeathSaves.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BC6256831EC00FB6542 /* DnDBDeathSaves.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BF0256832A500FB6542 /* DoJSONBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BEE256832A500FB6542 /* DoJSONBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BF1256832A500FB6542 /* DoJSONBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BEF256832A500FB6542 /* DoJSONBase.m */; };
+		F65E2BF92568381F00FB6542 /* BeyondDnDSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BF72568381F00FB6542 /* BeyondDnDSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E2BFA2568381F00FB6542 /* BeyondDnDSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BF82568381F00FB6542 /* BeyondDnDSheet.m */; };
+		F65E2C1C25683E9300FB6542 /* BeyondDnDUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2C1B25683E9300FB6542 /* BeyondDnDUnitTests.m */; };
+		F65E2C2725683E9F00FB6542 /* Ulfrik.json in Resources */ = {isa = PBXBuildFile; fileRef = F65E2C012568393A00FB6542 /* Ulfrik.json */; };
+		F65E2C332568414100FB6542 /* CommandLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2C322568414100FB6542 /* CommandLineTests.m */; };
+		F6B8991A2568887F00F2EA60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899192568887F00F2EA60 /* main.m */; };
+		F6B89925256888BB00F2EA60 /* BeyondDnD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65E2B88256831B100FB6542 /* BeyondDnD.framework */; };
+		F6B89926256888BB00F2EA60 /* BeyondDnD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F65E2B88256831B100FB6542 /* BeyondDnD.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6B89970256891D500F2EA60 /* BeyondDnD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65E2B88256831B100FB6542 /* BeyondDnD.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6B89927256888BB00F2EA60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F65E2B7F256831B100FB6542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F65E2B87256831B100FB6542;
+			remoteInfo = BeyondDnD;
+		};
+		F6B89971256891E000F2EA60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F65E2B7F256831B100FB6542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F65E2B87256831B100FB6542;
+			remoteInfo = BeyondDnD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6B899152568887F00F2EA60 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F6B89929256888BB00F2EA60 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F6B89926256888BB00F2EA60 /* BeyondDnD.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F65E2B88256831B100FB6542 /* BeyondDnD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BeyondDnD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65E2B8B256831B100FB6542 /* BeyondDnD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeyondDnD.h; sourceTree = "<group>"; };
+		F65E2B8C256831B100FB6542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F65E2BA5256831EB00FB6542 /* DnDBCharacterValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterValue.h; sourceTree = "<group>"; };
+		F65E2BA6256831EB00FB6542 /* DnDBCharacterCustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterCustomItem.m; sourceTree = "<group>"; };
+		F65E2BA7256831EB00FB6542 /* DnDBCharacterProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterProxy.h; sourceTree = "<group>"; };
+		F65E2BA8256831EB00FB6542 /* DnDBCharacterValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterValue.m; sourceTree = "<group>"; };
+		F65E2BA9256831EB00FB6542 /* DnDBInventoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBInventoryItem.m; sourceTree = "<group>"; };
+		F65E2BAA256831EB00FB6542 /* DnDBSpellSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBSpellSlot.h; sourceTree = "<group>"; };
+		F65E2BAB256831EC00FB6542 /* DnDBCurrencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBCurrencies.h; sourceTree = "<group>"; };
+		F65E2BAC256831EC00FB6542 /* DnDBCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacter.m; sourceTree = "<group>"; };
+		F65E2BAD256831EC00FB6542 /* DnDBStat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBStat.m; sourceTree = "<group>"; };
+		F65E2BAE256831EC00FB6542 /* DnDBDefaultBackdrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBDefaultBackdrop.h; sourceTree = "<group>"; };
+		F65E2BAF256831EC00FB6542 /* DnDBCampaign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBCampaign.h; sourceTree = "<group>"; };
+		F65E2BB0256831EC00FB6542 /* DnDBInventoryItemDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBInventoryItemDefinition.m; sourceTree = "<group>"; };
+		F65E2BB1256831EC00FB6542 /* DnDBCharacterProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterProxy.m; sourceTree = "<group>"; };
+		F65E2BB2256831EC00FB6542 /* DnDBModifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBModifiers.h; sourceTree = "<group>"; };
+		F65E2BB3256831EC00FB6542 /* DnDBModifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBModifiers.m; sourceTree = "<group>"; };
+		F65E2BB4256831EC00FB6542 /* DnDBBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBBackground.h; sourceTree = "<group>"; };
+		F65E2BB5256831EC00FB6542 /* DnDBCharacterCustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterCustomItem.h; sourceTree = "<group>"; };
+		F65E2BB6256831EC00FB6542 /* DnDBSpellSlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBSpellSlot.m; sourceTree = "<group>"; };
+		F65E2BB7256831EC00FB6542 /* DnDBThemeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBThemeColor.m; sourceTree = "<group>"; };
+		F65E2BB8256831EC00FB6542 /* DnDBInventoryItemDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBInventoryItemDefinition.h; sourceTree = "<group>"; };
+		F65E2BB9256831EC00FB6542 /* DnDBThemeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBThemeColor.h; sourceTree = "<group>"; };
+		F65E2BBA256831EC00FB6542 /* DnDBCampaign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBCampaign.m; sourceTree = "<group>"; };
+		F65E2BBB256831EC00FB6542 /* DnDBClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBClass.h; sourceTree = "<group>"; };
+		F65E2BBC256831EC00FB6542 /* DnDBCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBCharacter.h; sourceTree = "<group>"; };
+		F65E2BBD256831EC00FB6542 /* DnDBRace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBRace.h; sourceTree = "<group>"; };
+		F65E2BBE256831EC00FB6542 /* DnDBCurrencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBCurrencies.m; sourceTree = "<group>"; };
+		F65E2BBF256831EC00FB6542 /* DnDBClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBClass.m; sourceTree = "<group>"; };
+		F65E2BC0256831EC00FB6542 /* DnDBStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBStat.h; sourceTree = "<group>"; };
+		F65E2BC1256831EC00FB6542 /* DnDBDeathSaves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBDeathSaves.m; sourceTree = "<group>"; };
+		F65E2BC2256831EC00FB6542 /* DnDBInventoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBInventoryItem.h; sourceTree = "<group>"; };
+		F65E2BC3256831EC00FB6542 /* DnDBBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBBackground.m; sourceTree = "<group>"; };
+		F65E2BC4256831EC00FB6542 /* DnDBDefaultBackdrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBDefaultBackdrop.m; sourceTree = "<group>"; };
+		F65E2BC5256831EC00FB6542 /* DnDBRace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnDBRace.m; sourceTree = "<group>"; };
+		F65E2BC6256831EC00FB6542 /* DnDBDeathSaves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnDBDeathSaves.h; sourceTree = "<group>"; };
+		F65E2BEE256832A500FB6542 /* DoJSONBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoJSONBase.h; sourceTree = "<group>"; };
+		F65E2BEF256832A500FB6542 /* DoJSONBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoJSONBase.m; sourceTree = "<group>"; };
+		F65E2BF72568381F00FB6542 /* BeyondDnDSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeyondDnDSheet.h; sourceTree = "<group>"; };
+		F65E2BF82568381F00FB6542 /* BeyondDnDSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeyondDnDSheet.m; sourceTree = "<group>"; };
+		F65E2C012568393A00FB6542 /* Ulfrik.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Ulfrik.json; sourceTree = "<group>"; };
+		F65E2C1925683E9300FB6542 /* BeyondDnDUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeyondDnDUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65E2C1B25683E9300FB6542 /* BeyondDnDUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeyondDnDUnitTests.m; sourceTree = "<group>"; };
+		F65E2C1D25683E9300FB6542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F65E2C322568414100FB6542 /* CommandLineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CommandLineTests.m; path = BeyondDnDUnitTests/CommandLineTests.m; sourceTree = SOURCE_ROOT; };
+		F6B899172568887F00F2EA60 /* bdnd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bdnd; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B899192568887F00F2EA60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F65E2B85256831B100FB6542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F65E2C1625683E9300FB6542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B89970256891D500F2EA60 /* BeyondDnD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B899142568887F00F2EA60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B89925256888BB00F2EA60 /* BeyondDnD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F65E2B7E256831B100FB6542 = {
+			isa = PBXGroup;
+			children = (
+				F65E2B8A256831B100FB6542 /* BeyondDnD */,
+				F65E2C1A25683E9300FB6542 /* BeyondDnDUnitTests */,
+				F6B899182568887F00F2EA60 /* bdnd */,
+				F65E2B89256831B100FB6542 /* Products */,
+				F6B89924256888BB00F2EA60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F65E2B89256831B100FB6542 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F65E2B88256831B100FB6542 /* BeyondDnD.framework */,
+				F65E2C1925683E9300FB6542 /* BeyondDnDUnitTests.xctest */,
+				F6B899172568887F00F2EA60 /* bdnd */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F65E2B8A256831B100FB6542 /* BeyondDnD */ = {
+			isa = PBXGroup;
+			children = (
+				F65E2BED2568328C00FB6542 /* JSonBase */,
+				F65E2BA4256831C000FB6542 /* Model */,
+				F65E2B8B256831B100FB6542 /* BeyondDnD.h */,
+				F65E2BF6256837C600FB6542 /* TheFunBits */,
+				F65E2B8C256831B100FB6542 /* Info.plist */,
+			);
+			path = BeyondDnD;
+			sourceTree = "<group>";
+		};
+		F65E2BA4256831C000FB6542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F65E2BB4256831EC00FB6542 /* DnDBBackground.h */,
+				F65E2BC3256831EC00FB6542 /* DnDBBackground.m */,
+				F65E2BAF256831EC00FB6542 /* DnDBCampaign.h */,
+				F65E2BBA256831EC00FB6542 /* DnDBCampaign.m */,
+				F65E2BBC256831EC00FB6542 /* DnDBCharacter.h */,
+				F65E2BAC256831EC00FB6542 /* DnDBCharacter.m */,
+				F65E2BB5256831EC00FB6542 /* DnDBCharacterCustomItem.h */,
+				F65E2BA6256831EB00FB6542 /* DnDBCharacterCustomItem.m */,
+				F65E2BA7256831EB00FB6542 /* DnDBCharacterProxy.h */,
+				F65E2BB1256831EC00FB6542 /* DnDBCharacterProxy.m */,
+				F65E2BA5256831EB00FB6542 /* DnDBCharacterValue.h */,
+				F65E2BA8256831EB00FB6542 /* DnDBCharacterValue.m */,
+				F65E2BBB256831EC00FB6542 /* DnDBClass.h */,
+				F65E2BBF256831EC00FB6542 /* DnDBClass.m */,
+				F65E2BAB256831EC00FB6542 /* DnDBCurrencies.h */,
+				F65E2BBE256831EC00FB6542 /* DnDBCurrencies.m */,
+				F65E2BC6256831EC00FB6542 /* DnDBDeathSaves.h */,
+				F65E2BC1256831EC00FB6542 /* DnDBDeathSaves.m */,
+				F65E2BAE256831EC00FB6542 /* DnDBDefaultBackdrop.h */,
+				F65E2BC4256831EC00FB6542 /* DnDBDefaultBackdrop.m */,
+				F65E2BC2256831EC00FB6542 /* DnDBInventoryItem.h */,
+				F65E2BA9256831EB00FB6542 /* DnDBInventoryItem.m */,
+				F65E2BB8256831EC00FB6542 /* DnDBInventoryItemDefinition.h */,
+				F65E2BB0256831EC00FB6542 /* DnDBInventoryItemDefinition.m */,
+				F65E2BB2256831EC00FB6542 /* DnDBModifiers.h */,
+				F65E2BB3256831EC00FB6542 /* DnDBModifiers.m */,
+				F65E2BBD256831EC00FB6542 /* DnDBRace.h */,
+				F65E2BC5256831EC00FB6542 /* DnDBRace.m */,
+				F65E2BAA256831EB00FB6542 /* DnDBSpellSlot.h */,
+				F65E2BB6256831EC00FB6542 /* DnDBSpellSlot.m */,
+				F65E2BC0256831EC00FB6542 /* DnDBStat.h */,
+				F65E2BAD256831EC00FB6542 /* DnDBStat.m */,
+				F65E2BB9256831EC00FB6542 /* DnDBThemeColor.h */,
+				F65E2BB7256831EC00FB6542 /* DnDBThemeColor.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F65E2BED2568328C00FB6542 /* JSonBase */ = {
+			isa = PBXGroup;
+			children = (
+				F65E2BEE256832A500FB6542 /* DoJSONBase.h */,
+				F65E2BEF256832A500FB6542 /* DoJSONBase.m */,
+			);
+			path = JSonBase;
+			sourceTree = "<group>";
+		};
+		F65E2BF6256837C600FB6542 /* TheFunBits */ = {
+			isa = PBXGroup;
+			children = (
+				F65E2BF72568381F00FB6542 /* BeyondDnDSheet.h */,
+				F65E2BF82568381F00FB6542 /* BeyondDnDSheet.m */,
+			);
+			path = TheFunBits;
+			sourceTree = "<group>";
+		};
+		F65E2C1A25683E9300FB6542 /* BeyondDnDUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F65E2C012568393A00FB6542 /* Ulfrik.json */,
+				F65E2C1B25683E9300FB6542 /* BeyondDnDUnitTests.m */,
+				F65E2C322568414100FB6542 /* CommandLineTests.m */,
+				F65E2C1D25683E9300FB6542 /* Info.plist */,
+			);
+			path = BeyondDnDUnitTests;
+			sourceTree = "<group>";
+		};
+		F6B899182568887F00F2EA60 /* bdnd */ = {
+			isa = PBXGroup;
+			children = (
+				F6B899192568887F00F2EA60 /* main.m */,
+			);
+			path = bdnd;
+			sourceTree = "<group>";
+		};
+		F6B89924256888BB00F2EA60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F65E2B83256831B100FB6542 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65E2BD1256831EC00FB6542 /* DnDBCampaign.h in Headers */,
+				F65E2BC9256831EC00FB6542 /* DnDBCharacterProxy.h in Headers */,
+				F65E2BDF256831EC00FB6542 /* DnDBRace.h in Headers */,
+				F65E2BCD256831EC00FB6542 /* DnDBCurrencies.h in Headers */,
+				F65E2BF92568381F00FB6542 /* BeyondDnDSheet.h in Headers */,
+				F65E2BE2256831EC00FB6542 /* DnDBStat.h in Headers */,
+				F65E2BD6256831EC00FB6542 /* DnDBBackground.h in Headers */,
+				F65E2BDD256831EC00FB6542 /* DnDBClass.h in Headers */,
+				F65E2BDB256831EC00FB6542 /* DnDBThemeColor.h in Headers */,
+				F65E2BDE256831EC00FB6542 /* DnDBCharacter.h in Headers */,
+				F65E2BD7256831EC00FB6542 /* DnDBCharacterCustomItem.h in Headers */,
+				F65E2BE8256831EC00FB6542 /* DnDBDeathSaves.h in Headers */,
+				F65E2BF0256832A500FB6542 /* DoJSONBase.h in Headers */,
+				F65E2BC7256831EC00FB6542 /* DnDBCharacterValue.h in Headers */,
+				F65E2BE4256831EC00FB6542 /* DnDBInventoryItem.h in Headers */,
+				F65E2B99256831B100FB6542 /* BeyondDnD.h in Headers */,
+				F65E2BD0256831EC00FB6542 /* DnDBDefaultBackdrop.h in Headers */,
+				F65E2BCC256831EC00FB6542 /* DnDBSpellSlot.h in Headers */,
+				F65E2BDA256831EC00FB6542 /* DnDBInventoryItemDefinition.h in Headers */,
+				F65E2BD4256831EC00FB6542 /* DnDBModifiers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F65E2B87256831B100FB6542 /* BeyondDnD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F65E2B9C256831B100FB6542 /* Build configuration list for PBXNativeTarget "BeyondDnD" */;
+			buildPhases = (
+				F65E2B83256831B100FB6542 /* Headers */,
+				F65E2B84256831B100FB6542 /* Sources */,
+				F65E2B85256831B100FB6542 /* Frameworks */,
+				F65E2B86256831B100FB6542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeyondDnD;
+			productName = BeyondDnD;
+			productReference = F65E2B88256831B100FB6542 /* BeyondDnD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F65E2C1825683E9300FB6542 /* BeyondDnDUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F65E2C2125683E9300FB6542 /* Build configuration list for PBXNativeTarget "BeyondDnDUnitTests" */;
+			buildPhases = (
+				F65E2C1525683E9300FB6542 /* Sources */,
+				F65E2C1625683E9300FB6542 /* Frameworks */,
+				F65E2C1725683E9300FB6542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6B89972256891E000F2EA60 /* PBXTargetDependency */,
+			);
+			name = BeyondDnDUnitTests;
+			productName = BeyondDnDUnitTests;
+			productReference = F65E2C1925683E9300FB6542 /* BeyondDnDUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6B899162568887F00F2EA60 /* bdnd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6B8991D2568887F00F2EA60 /* Build configuration list for PBXNativeTarget "bdnd" */;
+			buildPhases = (
+				F6B899132568887F00F2EA60 /* Sources */,
+				F6B899142568887F00F2EA60 /* Frameworks */,
+				F6B899152568887F00F2EA60 /* CopyFiles */,
+				F6B89929256888BB00F2EA60 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6B89928256888BB00F2EA60 /* PBXTargetDependency */,
+			);
+			name = bdnd;
+			productName = bdnd;
+			productReference = F6B899172568887F00F2EA60 /* bdnd */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F65E2B7F256831B100FB6542 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = ca.DoRyu;
+				TargetAttributes = {
+					F65E2B87256831B100FB6542 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					F65E2C1825683E9300FB6542 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					F6B899162568887F00F2EA60 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = F65E2B82256831B100FB6542 /* Build configuration list for PBXProject "BeyondDnD" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F65E2B7E256831B100FB6542;
+			productRefGroup = F65E2B89256831B100FB6542 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F65E2B87256831B100FB6542 /* BeyondDnD */,
+				F65E2C1825683E9300FB6542 /* BeyondDnDUnitTests */,
+				F6B899162568887F00F2EA60 /* bdnd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F65E2B86256831B100FB6542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F65E2C1725683E9300FB6542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65E2C2725683E9F00FB6542 /* Ulfrik.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F65E2B84256831B100FB6542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65E2BCB256831EC00FB6542 /* DnDBInventoryItem.m in Sources */,
+				F65E2BC8256831EC00FB6542 /* DnDBCharacterCustomItem.m in Sources */,
+				F65E2BDC256831EC00FB6542 /* DnDBCampaign.m in Sources */,
+				F65E2BE6256831EC00FB6542 /* DnDBDefaultBackdrop.m in Sources */,
+				F65E2BD2256831EC00FB6542 /* DnDBInventoryItemDefinition.m in Sources */,
+				F65E2BE7256831EC00FB6542 /* DnDBRace.m in Sources */,
+				F65E2BCF256831EC00FB6542 /* DnDBStat.m in Sources */,
+				F65E2BE1256831EC00FB6542 /* DnDBClass.m in Sources */,
+				F65E2BD5256831EC00FB6542 /* DnDBModifiers.m in Sources */,
+				F65E2BE3256831EC00FB6542 /* DnDBDeathSaves.m in Sources */,
+				F65E2BD3256831EC00FB6542 /* DnDBCharacterProxy.m in Sources */,
+				F65E2BF1256832A500FB6542 /* DoJSONBase.m in Sources */,
+				F65E2BD8256831EC00FB6542 /* DnDBSpellSlot.m in Sources */,
+				F65E2BFA2568381F00FB6542 /* BeyondDnDSheet.m in Sources */,
+				F65E2BE5256831EC00FB6542 /* DnDBBackground.m in Sources */,
+				F65E2BCA256831EC00FB6542 /* DnDBCharacterValue.m in Sources */,
+				F65E2BCE256831EC00FB6542 /* DnDBCharacter.m in Sources */,
+				F65E2BE0256831EC00FB6542 /* DnDBCurrencies.m in Sources */,
+				F65E2BD9256831EC00FB6542 /* DnDBThemeColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F65E2C1525683E9300FB6542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65E2C1C25683E9300FB6542 /* BeyondDnDUnitTests.m in Sources */,
+				F65E2C332568414100FB6542 /* CommandLineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B899132568887F00F2EA60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B8991A2568887F00F2EA60 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6B89928256888BB00F2EA60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F65E2B87256831B100FB6542 /* BeyondDnD */;
+			targetProxy = F6B89927256888BB00F2EA60 /* PBXContainerItemProxy */;
+		};
+		F6B89972256891E000F2EA60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F65E2B87256831B100FB6542 /* BeyondDnD */;
+			targetProxy = F6B89971256891E000F2EA60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F65E2B9A256831B100FB6542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F65E2B9B256831B100FB6542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F65E2B9D256831B100FB6542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				INFOPLIST_FILE = BeyondDnD/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.doryu.BeyondDnD;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F65E2B9E256831B100FB6542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				INFOPLIST_FILE = BeyondDnD/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.doryu.BeyondDnD;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F65E2C2225683E9300FB6542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(root)/**",
+				);
+				INFOPLIST_FILE = BeyondDnDUnitTests/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(root)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.doryu.BeyondDnDUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		F65E2C2325683E9300FB6542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(root)/**",
+				);
+				INFOPLIST_FILE = BeyondDnDUnitTests/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(root)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.doryu.BeyondDnDUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		F6B8991B2568887F00F2EA60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(root)/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		F6B8991C2568887F00F2EA60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(root)/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F65E2B82256831B100FB6542 /* Build configuration list for PBXProject "BeyondDnD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65E2B9A256831B100FB6542 /* Debug */,
+				F65E2B9B256831B100FB6542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F65E2B9C256831B100FB6542 /* Build configuration list for PBXNativeTarget "BeyondDnD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65E2B9D256831B100FB6542 /* Debug */,
+				F65E2B9E256831B100FB6542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F65E2C2125683E9300FB6542 /* Build configuration list for PBXNativeTarget "BeyondDnDUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65E2C2225683E9300FB6542 /* Debug */,
+				F65E2C2325683E9300FB6542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6B8991D2568887F00F2EA60 /* Build configuration list for PBXNativeTarget "bdnd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6B8991B2568887F00F2EA60 /* Debug */,
+				F6B8991C2568887F00F2EA60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F65E2B7F256831B100FB6542 /* Project object */;
+}
