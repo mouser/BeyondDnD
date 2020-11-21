@@ -6,7 +6,7 @@
 //  Copyright © 2020 DoRyu. All rights reserved.
 //
 
-#import "DoJSonBase.h"
+#import "DoJSONBase.h"
 #import "DnDBInventoryItemDefinition.h"
 
 NS_ASSUME_NONNULL_BEGIN

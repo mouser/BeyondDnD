@@ -189,6 +189,11 @@
     return [self levelFrom: self.HP];
 }
 
+- (NSString*) name
+{
+    return self.character.name;
+}
+
 #pragma mark - Internal support functions for the composite values
 
 - (NSInteger) findStat:  (DnDBStatID) stat
@@ -218,8 +223,8 @@
 
 - (NSInteger) adjustedStat: (DnDBStatID) stat
 {
-    NSInteger adjustedStat  =   [self rawStat: stat];
-                            +   [self findStat: stat inBlock: self.character.bonusStats];
+    NSInteger adjustedStat  =   [self rawStat: stat]
+                            +   [self findStat: stat inBlock: self.character.bonusStats]
                             +   [self findStat: stat inBlock: self.character.overrideStats];
     
     return adjustedStat;
@@ -455,19 +460,19 @@
 
 #pragma mark - Game Computed Stats
 
-- (NSInteger) stat: (NSInteger) stat
+- (NSInteger) modifierFor: (NSInteger) statScore
 {
-    if (stat)
+    if (statScore)
     {
-        stat = (stat / 2) - 5;
+        statScore = (statScore / 2) - 5;
     }
     
-    return stat;
+    return statScore;
 }
 
 - (NSInteger) STR_mod
 {
-    return [self stat: self.STR];
+    return [self modifierFor: self.STR];
 }
 
 - (NSInteger) STR_save
@@ -477,7 +482,7 @@
 
 - (NSInteger) DEX_mod
 {
-    return [self stat: self.DEX];
+    return [self modifierFor: self.DEX];
 }
 
 - (NSInteger) DEX_save
@@ -487,7 +492,7 @@
 
 - (NSInteger) CON_mod
 {
-    return [self stat: self.CON];
+    return [self modifierFor: self.CON];
 }
 
 - (NSInteger) CON_save
@@ -497,7 +502,7 @@
 
 - (NSInteger) INT_mod
 {
-    return [self stat: self.INT];
+    return [self modifierFor: self.INT];
 }
 
 - (NSInteger) INT_save
@@ -507,7 +512,7 @@
 
 - (NSInteger) WIZ_mod
 {
-    return [self stat: self.WIZ];
+    return [self modifierFor: self.WIZ];
 }
 
 - (NSInteger) WIZ_save
@@ -517,7 +522,7 @@
 
 - (NSInteger) CHA_mod
 {
-    return [self stat: self.CHA];
+    return [self modifierFor: self.CHA];
 }
 
 - (NSInteger) CHA_save

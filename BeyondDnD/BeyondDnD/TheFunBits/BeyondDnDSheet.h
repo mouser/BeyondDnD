@@ -33,13 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSInteger) level;
 
-- (NSInteger) hitPoints;
-
-- (NSInteger) tempHitPoints;
-
 - (NSString*) name;
 
-- (NSInteger) stat: (DnDBStatID) statID;
+- (NSInteger) modifierFor: (NSInteger) statScore;
 
 #pragma mark - Aviso.Character code transposed here
 
