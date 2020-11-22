@@ -15,20 +15,7 @@
 {
     if ([key isEqualToString: @"racialTraits"])
     {
-        NSMutableArray*             racialTraits    =   NSMutableArray.new;
-        
-        NSArray<NSDictionary*>*     traits           =   (id) racialTraits;
-        
-        for (NSDictionary* aTrait in traits)
-        {
-            DnDBRacialTraits*   traitsRecord    =   DnDBRacialTraits.new;
-            
-            [traitsRecord setValuesForKeysWithDictionary: aTrait];
-            
-            [racialTraits addObject: traitsRecord];
-        }
-        
-        _racialTraits = racialTraits;
+        _racialTraits = [DnDBRacialTraits racialTraitsFrom: value];
     }
     else if ([key isEqualToString: @"weightSpeeds"])
     {

@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 //whose only property, definitions, is a DnDBRacialTrait.
 @property (nonatomic, retain) DnDBRacialTrait*      definitions;
 
++ (NSArray<DnDBRacialTraits*>*) racialTraitsFrom: (NSArray<NSDictionary*>*) info;
+
 @end
 
 NS_ASSUME_NONNULL_END

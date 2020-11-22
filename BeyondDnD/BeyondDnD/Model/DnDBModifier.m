@@ -10,6 +10,21 @@
 
 @implementation DnDBModifier
 
++ (NSArray<DnDBModifier*>*) modifiersFrom: (NSArray<NSDictionary*>*) info
+{
+    NSMutableArray*     modifiers    =   NSMutableArray.new;
+    
+    for (NSDictionary* aModifierInfo in (NSArray*) info)
+    {
+        DnDBModifier*   aModifier   =   DnDBModifier.new;
+        
+        [aModifier setValuesForKeysWithDictionary: aModifierInfo];
+        [modifiers addObject: aModifier];
+    }
+    
+    return modifiers;
+}
+
 - (void) setValue: (id) value
            forKey: (NSString*) key
 {

@@ -27,4 +27,18 @@
     return classes;
 }
 
+- (void) setValue: (id) value
+           forKey: (NSString*) key
+{
+    if ([key isEqualToString: @"id"])
+    {
+        _id_entification = value;
+    }
+    else
+    {
+        [super setValue: value
+                 forKey: key];
+    }
+}
+
 @end

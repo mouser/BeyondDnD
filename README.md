@@ -104,3 +104,18 @@ This is a sample tool using BeyondDnD.framework
 
 It shows how you can use it in your code and offers a couple of utilities to help you debug your code.
 See _dndb --help_ in terminal once you build and install it.
+
+## Things to watch out for
+
+When perusing the data model, it's a bit hard to make sense of the containment hierarchy. So, always 
+start from the _BeyondDnDSheet_ class and work your way down.
+
+Another thing to watch out for is plural. Some classes have a plural spelling and they make use of
+a different class, same name, singular. One example comes to mind: _DnDBSpells_ is a structure
+that contains four members that are arrays of _DnDBSpell_, singular, instances which is the actual
+structure of a single spell.
+
+Sometimes the original data model reused some field names and to avoir clashing, I've augmented
+the class name with it's owner name to differentiate. End result is that the class names don't **always**
+map to the field name they refer to. One example of this is _definition_ in _DnDBInventoryItem_,
+which maps to _DnDBInventoryItemDefinition_.

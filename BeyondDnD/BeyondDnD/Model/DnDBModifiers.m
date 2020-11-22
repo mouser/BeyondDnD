@@ -15,59 +15,19 @@
 {
     if ([key isEqualToString: @"race"])
     {
-        NSMutableArray*     modifiers    =   NSMutableArray.new;
-        
-        for (NSDictionary* info in (NSArray*) value)
-        {
-            DnDBModifier*   aModifier   =   DnDBModifier.new;
-            
-            [aModifier setValuesForKeysWithDictionary: info];
-            [modifiers addObject: aModifier];
-        }
-        
-        _race = (id) modifiers;
+        _race = [DnDBModifier modifiersFrom: value];
     }
     else if ([key isEqualToString: @"class"])
     {
-        NSMutableArray*     modifiers    =   NSMutableArray.new;
-        
-        for (NSDictionary* info in (NSArray*) value)
-        {
-            DnDBModifier*   aModifier   =   DnDBModifier.new;
-            
-            [aModifier setValuesForKeysWithDictionary: info];
-            [modifiers addObject: aModifier];
-        }
-        
-        _dClass = (id) modifiers;
+        _dClass = [DnDBModifier modifiersFrom: value];
     }
     else if ([key isEqualToString: @"background"])
     {
-        NSMutableArray*     modifiers    =   NSMutableArray.new;
-        
-        for (NSDictionary* info in (NSArray*) value)
-        {
-            DnDBModifier*   aModifier   =   DnDBModifier.new;
-            
-            [aModifier setValuesForKeysWithDictionary: info];
-            [modifiers addObject: aModifier];
-        }
-        
-        _background = (id) modifiers;
+        _background = [DnDBModifier modifiersFrom: value];
     }
     else if ([key isEqualToString: @"item"])
     {
-        NSMutableArray*     modifiers    =   NSMutableArray.new;
-        
-        for (NSDictionary* info in (NSArray*) value)
-        {
-            DnDBModifier*   aModifier   =   DnDBModifier.new;
-            
-            [aModifier setValuesForKeysWithDictionary: info];
-            [modifiers addObject: aModifier];
-        }
-        
-        _item = (id) modifiers;
+        _item = [DnDBModifier modifiersFrom: value];
     }
     else
     {

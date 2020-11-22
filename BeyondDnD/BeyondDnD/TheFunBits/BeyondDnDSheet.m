@@ -239,7 +239,7 @@
 
 - (BOOL) STRSaves
 {
-#warning TO DO
+#warning TO DO I have yet to find where a character is known to save on this stat
     return NO;
 }
 
@@ -250,7 +250,7 @@
 
 - (BOOL) DEXSaves
 {
-#warning TO DO
+#warning TO DO I have yet to find where a character is known to save on this stat
     return NO;
 }
 
@@ -261,7 +261,7 @@
 
 - (BOOL) CONSaves
 {
-#warning TO DO
+#warning TO DO I have yet to find where a character is known to save on this stat
     return NO;
 }
 
@@ -272,7 +272,7 @@
 
 - (BOOL) INTSaves
 {
-#warning TO DO
+#warning TO DO I have yet to find where a character is known to save on this stat
     return NO;
 }
 
@@ -283,7 +283,7 @@
 
 - (BOOL) WIZSaves
 {
-#warning TO DO
+#warning TO DO I have yet to find where a character is known to save on this stat
     return NO;
 }
 
@@ -294,7 +294,7 @@
 
 - (BOOL) CHASaves
 {
-#warning TO DO
+#warning TO DO I have yet to find where a character is known to save on this stat
     return NO;
 }
 
@@ -316,24 +316,28 @@
     return self.character.temporaryHitPoints.integerValue;
 }
 
-- (NSInteger) HITS;   //Hit dices size for each new leve
+- (NSInteger) HITS;
 {
-    //self.character.class...
-#warning TO DO
-    return 0;
+    NSInteger   hitDie  =   0;
+    
+    for (DnDBClass* aClass in self.character.classes)
+    {
+        hitDie = MAX(hitDie, aClass.hitDiceUsed.integerValue);
+    }
+    
+    return hitDie;
 }
 
 - (NSInteger) Speed
 {
-#warning TO DO
-    return 0;
+    return self.character.race.weightSpeeds.normal.walk.integerValue;
 }
 
 - (NSInteger) AC
 {
     NSInteger   base =  self.rawAC;
     
-#warning TO DO
+#warning TO DO need to loop race subrace items and other structures for any modifiers
     
     return base;
 }

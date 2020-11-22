@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class DnDBModifier;
+
 @interface DnDBModifier : DoJSONBase
 
 @property (nonatomic, retain) NSString*                 id_entification;        // "racialTrait_6_1339"
@@ -29,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) NSNumber*                 value;                  // 60
 @property (nonatomic, retain) NSNumber*                 componentId;            // 6
 @property (nonatomic, retain) NSNumber*                 componentTypeId;        // 196045217
+
++ (NSArray<DnDBModifier*>*) modifiersFrom: (NSArray<NSDictionary*>*) info;
 
 @end
 

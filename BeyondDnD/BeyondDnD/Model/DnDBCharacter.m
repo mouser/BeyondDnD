@@ -24,6 +24,10 @@
         [super setValue: value
                  forKey: @"id_entification"];
     }
+    else if ([key isEqualToString: @"classes"])
+    {
+        _classes = [DnDBClass classesFrom: value];
+    }
     else if ([key isEqualToString: @"stats"])
     {
         _stats = [DnDBStat statBlockWith: value];
@@ -89,6 +93,46 @@
         _background =  DnDBBackground.new;
         
         [self.background setValuesForKeysWithDictionary: value];
+    }
+    else if ([key isEqualToString: @"notes"])
+    {
+        _notes =  DnDBNotes.new;
+        
+        [self.notes setValuesForKeysWithDictionary: value];
+    }
+    else if ([key isEqualToString: @"traits"])
+    {
+        _traits =  DnDBCharacterTraits.new;
+        
+        [self.traits setValuesForKeysWithDictionary: value];
+    }
+    else if ([key isEqualToString: @"preferences"])
+    {
+        _preferences =  DnDBCharacterPreferences.new;
+        
+        [self.preferences setValuesForKeysWithDictionary: value];
+    }
+    else if ([key isEqualToString: @"spells"])
+    {
+        _spells =  DnDBSpells.new;
+        
+        [self.spells setValuesForKeysWithDictionary: value];
+    }
+    else if ([key isEqualToString: @"options"])
+    {
+        _options =  DnDBCharacterOptions.new;
+        
+        [self.options setValuesForKeysWithDictionary: value];
+    }
+    else if ([key isEqualToString: @"classSpells"])
+    {
+        _classSpells =  [DnDBCharacterClassSpells classSpellsFrom: value];
+    }
+    else if ([key isEqualToString: @"choices"])
+    {
+        _choices =  [DnDBCharacterChoices new];
+        
+        [self.choices setValuesForKeysWithDictionary: value];
     }
     else
     {

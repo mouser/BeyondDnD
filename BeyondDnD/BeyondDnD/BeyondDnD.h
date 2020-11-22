@@ -17,6 +17,21 @@ FOUNDATION_EXPORT const unsigned char BeyondDnDVersionString[];
 
 
 #import <BeyondDnD/DoJSONBase.h>
+#import <BeyondDnD/DnDBCharacterOptions.h>
+#import <BeyondDnD/DnDBSpellAtHigherLevels.h>
+#import <BeyondDnD/DnDBSpellDuration.h>
+#import <BeyondDnD/DnDBSpellRange.h>
+#import <BeyondDnD/DnDBSpellActivation.h>
+#import <BeyondDnD/DnDBSpellDefinition.h>
+#import <BeyondDnD/DnDBSpellLimitedUse.h>
+#import <BeyondDnD/DnDBSpell.h>
+#import <BeyondDnD/DnDBSpells.h>
+#import <BeyondDnD/DnDBCharacterClassSpells.h>
+#import <BeyondDnD/DnDBCharacterPreferences.h>
+#import <BeyondDnD/DnDBNotes.h>
+#import <BeyondDnD/DnDBCharacterTraits.h>
+#import <BeyondDnD/DnDBChoiceOptions.h>
+#import <BeyondDnD/DnDBCharacterChoices.h>
 #import <BeyondDnD/DnDBNormalSpeed.h>
 #import <BeyondDnD/DnDBModifiers.h>
 #import <BeyondDnD/DnDBModifier.h>

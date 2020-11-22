@@ -10,6 +10,24 @@
 
 @implementation DnDBRacialTraits
 
++ (NSArray<DnDBRacialTraits*>*) racialTraitsFrom: (NSArray<NSDictionary*>*) info
+{
+    NSMutableArray*             racialTraits    =   NSMutableArray.new;
+    
+    NSArray<NSDictionary*>*     traits           =   (id) racialTraits;
+    
+    for (NSDictionary* aTrait in traits)
+    {
+        DnDBRacialTraits*   traitsRecord    =   DnDBRacialTraits.new;
+        
+        [traitsRecord setValuesForKeysWithDictionary: aTrait];
+        
+        [racialTraits addObject: traitsRecord];
+    }
+    
+    return racialTraits;
+}
+
 - (void) setValue: (id) value
            forKey: (NSString*) key
 {

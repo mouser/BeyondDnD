@@ -65,6 +65,38 @@
 		F6B899C02569DC8800F2EA60 /* DnDBNormalSpeed.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899BE2569DC8800F2EA60 /* DnDBNormalSpeed.m */; };
 		F6B899C92569DF2300F2EA60 /* DnDBModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899C72569DF2300F2EA60 /* DnDBModifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6B899CA2569DF2300F2EA60 /* DnDBModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899C82569DF2300F2EA60 /* DnDBModifier.m */; };
+		F6B899D3256A131B00F2EA60 /* DnDBNotes.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899D1256A131B00F2EA60 /* DnDBNotes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899D4256A131B00F2EA60 /* DnDBNotes.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899D2256A131B00F2EA60 /* DnDBNotes.m */; };
+		F6B899DD256A143A00F2EA60 /* DnDBCharacterTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899DB256A143A00F2EA60 /* DnDBCharacterTraits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899DE256A143A00F2EA60 /* DnDBCharacterTraits.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899DC256A143A00F2EA60 /* DnDBCharacterTraits.m */; };
+		F6B899E7256A14D700F2EA60 /* DnDBCharacterPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899E5256A14D700F2EA60 /* DnDBCharacterPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899E8256A14D700F2EA60 /* DnDBCharacterPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899E6256A14D700F2EA60 /* DnDBCharacterPreferences.m */; };
+		F6B899F1256A17BE00F2EA60 /* DnDBSpells.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899EF256A17BE00F2EA60 /* DnDBSpells.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899F2256A17BE00F2EA60 /* DnDBSpells.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899F0256A17BE00F2EA60 /* DnDBSpells.m */; };
+		F6B899FB256A188F00F2EA60 /* DnDBSpell.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899F9256A188F00F2EA60 /* DnDBSpell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899FC256A188F00F2EA60 /* DnDBSpell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899FA256A188F00F2EA60 /* DnDBSpell.m */; };
+		F6B89A05256AB86A00F2EA60 /* DnDBSpellLimitedUse.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A03256AB86A00F2EA60 /* DnDBSpellLimitedUse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A06256AB86A00F2EA60 /* DnDBSpellLimitedUse.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A04256AB86A00F2EA60 /* DnDBSpellLimitedUse.m */; };
+		F6B89A0F256ABA7D00F2EA60 /* DnDBSpellActivation.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A0D256ABA7D00F2EA60 /* DnDBSpellActivation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A10256ABA7D00F2EA60 /* DnDBSpellActivation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A0E256ABA7D00F2EA60 /* DnDBSpellActivation.m */; };
+		F6B89A19256ABBC800F2EA60 /* DnDBSpellRange.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A17256ABBC800F2EA60 /* DnDBSpellRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A1A256ABBC800F2EA60 /* DnDBSpellRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A18256ABBC800F2EA60 /* DnDBSpellRange.m */; };
+		F6B89A21256ABECB00F2EA60 /* DnDBSpellDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A1F256ABECB00F2EA60 /* DnDBSpellDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A22256ABECB00F2EA60 /* DnDBSpellDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A20256ABECB00F2EA60 /* DnDBSpellDefinition.m */; };
+		F6B89A2B256AC63E00F2EA60 /* DnDBSpellDuration.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A29256AC63E00F2EA60 /* DnDBSpellDuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A2C256AC63E00F2EA60 /* DnDBSpellDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A2A256AC63E00F2EA60 /* DnDBSpellDuration.m */; };
+		F6B89A35256AC75100F2EA60 /* DnDBSpellAtHigherLevels.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A33256AC75100F2EA60 /* DnDBSpellAtHigherLevels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A36256AC75100F2EA60 /* DnDBSpellAtHigherLevels.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A34256AC75100F2EA60 /* DnDBSpellAtHigherLevels.m */; };
+		F6B89A3F256AD68100F2EA60 /* DnDBCharacterOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A3D256AD68100F2EA60 /* DnDBCharacterOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A40256AD68100F2EA60 /* DnDBCharacterOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A3E256AD68100F2EA60 /* DnDBCharacterOptions.m */; };
+		F6B89A49256AFC4400F2EA60 /* DnDBCharacterClassSpells.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A47256AFC4300F2EA60 /* DnDBCharacterClassSpells.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A4A256AFC4400F2EA60 /* DnDBCharacterClassSpells.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A48256AFC4300F2EA60 /* DnDBCharacterClassSpells.m */; };
+		F6B89A53256AFFD200F2EA60 /* DnDBCharacterChoices.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A51256AFFD200F2EA60 /* DnDBCharacterChoices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A54256AFFD200F2EA60 /* DnDBCharacterChoices.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A52256AFFD200F2EA60 /* DnDBCharacterChoices.m */; };
+		F6B89A5D256B011000F2EA60 /* DnDBCharacterChoice.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A5B256B011000F2EA60 /* DnDBCharacterChoice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A5E256B011000F2EA60 /* DnDBCharacterChoice.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A5C256B011000F2EA60 /* DnDBCharacterChoice.m */; };
+		F6B89A65256B02F200F2EA60 /* DnDBChoiceOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B89A63256B02F200F2EA60 /* DnDBChoiceOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B89A66256B02F200F2EA60 /* DnDBChoiceOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B89A64256B02F200F2EA60 /* DnDBChoiceOptions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +200,38 @@
 		F6B899BE2569DC8800F2EA60 /* DnDBNormalSpeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBNormalSpeed.m; sourceTree = "<group>"; };
 		F6B899C72569DF2300F2EA60 /* DnDBModifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBModifier.h; sourceTree = "<group>"; };
 		F6B899C82569DF2300F2EA60 /* DnDBModifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBModifier.m; sourceTree = "<group>"; };
+		F6B899D1256A131B00F2EA60 /* DnDBNotes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBNotes.h; sourceTree = "<group>"; };
+		F6B899D2256A131B00F2EA60 /* DnDBNotes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBNotes.m; sourceTree = "<group>"; };
+		F6B899DB256A143A00F2EA60 /* DnDBCharacterTraits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterTraits.h; sourceTree = "<group>"; };
+		F6B899DC256A143A00F2EA60 /* DnDBCharacterTraits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterTraits.m; sourceTree = "<group>"; };
+		F6B899E5256A14D700F2EA60 /* DnDBCharacterPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterPreferences.h; sourceTree = "<group>"; };
+		F6B899E6256A14D700F2EA60 /* DnDBCharacterPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterPreferences.m; sourceTree = "<group>"; };
+		F6B899EF256A17BE00F2EA60 /* DnDBSpells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBSpells.h; sourceTree = "<group>"; };
+		F6B899F0256A17BE00F2EA60 /* DnDBSpells.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBSpells.m; sourceTree = "<group>"; };
+		F6B899F9256A188F00F2EA60 /* DnDBSpell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBSpell.h; sourceTree = "<group>"; };
+		F6B899FA256A188F00F2EA60 /* DnDBSpell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBSpell.m; sourceTree = "<group>"; };
+		F6B89A03256AB86A00F2EA60 /* DnDBSpellLimitedUse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBSpellLimitedUse.h; sourceTree = "<group>"; };
+		F6B89A04256AB86A00F2EA60 /* DnDBSpellLimitedUse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBSpellLimitedUse.m; sourceTree = "<group>"; };
+		F6B89A0D256ABA7D00F2EA60 /* DnDBSpellActivation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBSpellActivation.h; sourceTree = "<group>"; };
+		F6B89A0E256ABA7D00F2EA60 /* DnDBSpellActivation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBSpellActivation.m; sourceTree = "<group>"; };
+		F6B89A17256ABBC800F2EA60 /* DnDBSpellRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBSpellRange.h; sourceTree = "<group>"; };
+		F6B89A18256ABBC800F2EA60 /* DnDBSpellRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBSpellRange.m; sourceTree = "<group>"; };
+		F6B89A1F256ABECB00F2EA60 /* DnDBSpellDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBSpellDefinition.h; sourceTree = "<group>"; };
+		F6B89A20256ABECB00F2EA60 /* DnDBSpellDefinition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBSpellDefinition.m; sourceTree = "<group>"; };
+		F6B89A29256AC63E00F2EA60 /* DnDBSpellDuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBSpellDuration.h; sourceTree = "<group>"; };
+		F6B89A2A256AC63E00F2EA60 /* DnDBSpellDuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBSpellDuration.m; sourceTree = "<group>"; };
+		F6B89A33256AC75100F2EA60 /* DnDBSpellAtHigherLevels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBSpellAtHigherLevels.h; sourceTree = "<group>"; };
+		F6B89A34256AC75100F2EA60 /* DnDBSpellAtHigherLevels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBSpellAtHigherLevels.m; sourceTree = "<group>"; };
+		F6B89A3D256AD68100F2EA60 /* DnDBCharacterOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterOptions.h; sourceTree = "<group>"; };
+		F6B89A3E256AD68100F2EA60 /* DnDBCharacterOptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterOptions.m; sourceTree = "<group>"; };
+		F6B89A47256AFC4300F2EA60 /* DnDBCharacterClassSpells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterClassSpells.h; sourceTree = "<group>"; };
+		F6B89A48256AFC4300F2EA60 /* DnDBCharacterClassSpells.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterClassSpells.m; sourceTree = "<group>"; };
+		F6B89A51256AFFD200F2EA60 /* DnDBCharacterChoices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterChoices.h; sourceTree = "<group>"; };
+		F6B89A52256AFFD200F2EA60 /* DnDBCharacterChoices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterChoices.m; sourceTree = "<group>"; };
+		F6B89A5B256B011000F2EA60 /* DnDBCharacterChoice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterChoice.h; sourceTree = "<group>"; };
+		F6B89A5C256B011000F2EA60 /* DnDBCharacterChoice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterChoice.m; sourceTree = "<group>"; };
+		F6B89A63256B02F200F2EA60 /* DnDBChoiceOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBChoiceOptions.h; sourceTree = "<group>"; };
+		F6B89A64256B02F200F2EA60 /* DnDBChoiceOptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBChoiceOptions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +301,38 @@
 				F65E2BC3256831EC00FB6542 /* DnDBBackground.m */,
 				F65E2BAF256831EC00FB6542 /* DnDBCampaign.h */,
 				F65E2BBA256831EC00FB6542 /* DnDBCampaign.m */,
+				F6B899D1256A131B00F2EA60 /* DnDBNotes.h */,
+				F6B899D2256A131B00F2EA60 /* DnDBNotes.m */,
+				F6B899DB256A143A00F2EA60 /* DnDBCharacterTraits.h */,
+				F6B899DC256A143A00F2EA60 /* DnDBCharacterTraits.m */,
+				F6B899E5256A14D700F2EA60 /* DnDBCharacterPreferences.h */,
+				F6B899E6256A14D700F2EA60 /* DnDBCharacterPreferences.m */,
+				F6B89A03256AB86A00F2EA60 /* DnDBSpellLimitedUse.h */,
+				F6B89A04256AB86A00F2EA60 /* DnDBSpellLimitedUse.m */,
+				F6B89A0D256ABA7D00F2EA60 /* DnDBSpellActivation.h */,
+				F6B89A0E256ABA7D00F2EA60 /* DnDBSpellActivation.m */,
+				F6B89A17256ABBC800F2EA60 /* DnDBSpellRange.h */,
+				F6B89A18256ABBC800F2EA60 /* DnDBSpellRange.m */,
+				F6B89A33256AC75100F2EA60 /* DnDBSpellAtHigherLevels.h */,
+				F6B89A34256AC75100F2EA60 /* DnDBSpellAtHigherLevels.m */,
+				F6B89A29256AC63E00F2EA60 /* DnDBSpellDuration.h */,
+				F6B89A2A256AC63E00F2EA60 /* DnDBSpellDuration.m */,
+				F6B89A1F256ABECB00F2EA60 /* DnDBSpellDefinition.h */,
+				F6B89A20256ABECB00F2EA60 /* DnDBSpellDefinition.m */,
+				F6B899F9256A188F00F2EA60 /* DnDBSpell.h */,
+				F6B899FA256A188F00F2EA60 /* DnDBSpell.m */,
+				F6B899EF256A17BE00F2EA60 /* DnDBSpells.h */,
+				F6B899F0256A17BE00F2EA60 /* DnDBSpells.m */,
+				F6B89A3D256AD68100F2EA60 /* DnDBCharacterOptions.h */,
+				F6B89A3E256AD68100F2EA60 /* DnDBCharacterOptions.m */,
+				F6B89A47256AFC4300F2EA60 /* DnDBCharacterClassSpells.h */,
+				F6B89A48256AFC4300F2EA60 /* DnDBCharacterClassSpells.m */,
+				F6B89A63256B02F200F2EA60 /* DnDBChoiceOptions.h */,
+				F6B89A64256B02F200F2EA60 /* DnDBChoiceOptions.m */,
+				F6B89A5B256B011000F2EA60 /* DnDBCharacterChoice.h */,
+				F6B89A5C256B011000F2EA60 /* DnDBCharacterChoice.m */,
+				F6B89A51256AFFD200F2EA60 /* DnDBCharacterChoices.h */,
+				F6B89A52256AFFD200F2EA60 /* DnDBCharacterChoices.m */,
 				F65E2BBC256831EC00FB6542 /* DnDBCharacter.h */,
 				F65E2BAC256831EC00FB6542 /* DnDBCharacter.m */,
 				F65E2BB5256831EC00FB6542 /* DnDBCharacterCustomItem.h */,
@@ -337,29 +433,45 @@
 				F65E2BD1256831EC00FB6542 /* DnDBCampaign.h in Headers */,
 				F65E2BC9256831EC00FB6542 /* DnDBCharacterProxy.h in Headers */,
 				F65E2BDF256831EC00FB6542 /* DnDBRace.h in Headers */,
+				F6B89A3F256AD68100F2EA60 /* DnDBCharacterOptions.h in Headers */,
+				F6B899E7256A14D700F2EA60 /* DnDBCharacterPreferences.h in Headers */,
 				F65E2BCD256831EC00FB6542 /* DnDBCurrencies.h in Headers */,
+				F6B899FB256A188F00F2EA60 /* DnDBSpell.h in Headers */,
 				F6B899A12569D0D900F2EA60 /* DnDBActivation.h in Headers */,
+				F6B89A5D256B011000F2EA60 /* DnDBCharacterChoice.h in Headers */,
+				F6B89A19256ABBC800F2EA60 /* DnDBSpellRange.h in Headers */,
 				F65E2BF92568381F00FB6542 /* BeyondDnDSheet.h in Headers */,
 				F65E2BE2256831EC00FB6542 /* DnDBStat.h in Headers */,
 				F6B899C92569DF2300F2EA60 /* DnDBModifier.h in Headers */,
 				F65E2BD6256831EC00FB6542 /* DnDBBackground.h in Headers */,
 				F65E2BDD256831EC00FB6542 /* DnDBClass.h in Headers */,
 				F65E2BDB256831EC00FB6542 /* DnDBThemeColor.h in Headers */,
+				F6B89A65256B02F200F2EA60 /* DnDBChoiceOptions.h in Headers */,
 				F65E2BDE256831EC00FB6542 /* DnDBCharacter.h in Headers */,
 				F6B899AD2569D54800F2EA60 /* DnDBWeightSpeeds.h in Headers */,
 				F65E2BD7256831EC00FB6542 /* DnDBCharacterCustomItem.h in Headers */,
 				F65E2BE8256831EC00FB6542 /* DnDBDeathSaves.h in Headers */,
 				F6B899972569CF5400F2EA60 /* DnDBRacialTrait.h in Headers */,
+				F6B89A35256AC75100F2EA60 /* DnDBSpellAtHigherLevels.h in Headers */,
 				F65E2BF0256832A500FB6542 /* DoJSONBase.h in Headers */,
 				F65E2BC7256831EC00FB6542 /* DnDBCharacterValue.h in Headers */,
 				F65E2BE4256831EC00FB6542 /* DnDBInventoryItem.h in Headers */,
+				F6B89A49256AFC4400F2EA60 /* DnDBCharacterClassSpells.h in Headers */,
 				F65E2B99256831B100FB6542 /* BeyondDnD.h in Headers */,
+				F6B89A0F256ABA7D00F2EA60 /* DnDBSpellActivation.h in Headers */,
+				F6B899F1256A17BE00F2EA60 /* DnDBSpells.h in Headers */,
+				F6B899D3256A131B00F2EA60 /* DnDBNotes.h in Headers */,
+				F6B89A05256AB86A00F2EA60 /* DnDBSpellLimitedUse.h in Headers */,
+				F6B89A21256ABECB00F2EA60 /* DnDBSpellDefinition.h in Headers */,
+				F6B89A53256AFFD200F2EA60 /* DnDBCharacterChoices.h in Headers */,
 				F6B899B52569D78200F2EA60 /* DnDBRacialTraits.h in Headers */,
 				F6B899BF2569DC8800F2EA60 /* DnDBNormalSpeed.h in Headers */,
 				F65E2BD0256831EC00FB6542 /* DnDBDefaultBackdrop.h in Headers */,
+				F6B89A2B256AC63E00F2EA60 /* DnDBSpellDuration.h in Headers */,
 				F65E2BCC256831EC00FB6542 /* DnDBSpellSlot.h in Headers */,
 				F65E2BDA256831EC00FB6542 /* DnDBInventoryItemDefinition.h in Headers */,
 				F65E2BD4256831EC00FB6542 /* DnDBModifiers.h in Headers */,
+				F6B899DD256A143A00F2EA60 /* DnDBCharacterTraits.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,30 +596,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B89A5E256B011000F2EA60 /* DnDBCharacterChoice.m in Sources */,
+				F6B89A06256AB86A00F2EA60 /* DnDBSpellLimitedUse.m in Sources */,
+				F6B89A40256AD68100F2EA60 /* DnDBCharacterOptions.m in Sources */,
 				F6B899CA2569DF2300F2EA60 /* DnDBModifier.m in Sources */,
 				F65E2BCB256831EC00FB6542 /* DnDBInventoryItem.m in Sources */,
+				F6B89A22256ABECB00F2EA60 /* DnDBSpellDefinition.m in Sources */,
 				F65E2BC8256831EC00FB6542 /* DnDBCharacterCustomItem.m in Sources */,
+				F6B899D4256A131B00F2EA60 /* DnDBNotes.m in Sources */,
 				F65E2BDC256831EC00FB6542 /* DnDBCampaign.m in Sources */,
 				F65E2BE6256831EC00FB6542 /* DnDBDefaultBackdrop.m in Sources */,
 				F6B899B62569D78200F2EA60 /* DnDBRacialTraits.m in Sources */,
 				F65E2BD2256831EC00FB6542 /* DnDBInventoryItemDefinition.m in Sources */,
+				F6B899DE256A143A00F2EA60 /* DnDBCharacterTraits.m in Sources */,
 				F65E2BE7256831EC00FB6542 /* DnDBRace.m in Sources */,
+				F6B89A2C256AC63E00F2EA60 /* DnDBSpellDuration.m in Sources */,
 				F65E2BCF256831EC00FB6542 /* DnDBStat.m in Sources */,
 				F65E2BE1256831EC00FB6542 /* DnDBClass.m in Sources */,
+				F6B899E8256A14D700F2EA60 /* DnDBCharacterPreferences.m in Sources */,
 				F6B899982569CF5400F2EA60 /* DnDBRacialTrait.m in Sources */,
 				F65E2BD5256831EC00FB6542 /* DnDBModifiers.m in Sources */,
 				F65E2BE3256831EC00FB6542 /* DnDBDeathSaves.m in Sources */,
+				F6B89A36256AC75100F2EA60 /* DnDBSpellAtHigherLevels.m in Sources */,
+				F6B89A4A256AFC4400F2EA60 /* DnDBCharacterClassSpells.m in Sources */,
 				F6B899AE2569D54800F2EA60 /* DnDBWeightSpeeds.m in Sources */,
 				F65E2BD3256831EC00FB6542 /* DnDBCharacterProxy.m in Sources */,
+				F6B89A54256AFFD200F2EA60 /* DnDBCharacterChoices.m in Sources */,
 				F65E2BF1256832A500FB6542 /* DoJSONBase.m in Sources */,
 				F65E2BD8256831EC00FB6542 /* DnDBSpellSlot.m in Sources */,
 				F65E2BFA2568381F00FB6542 /* BeyondDnDSheet.m in Sources */,
+				F6B89A1A256ABBC800F2EA60 /* DnDBSpellRange.m in Sources */,
 				F65E2BE5256831EC00FB6542 /* DnDBBackground.m in Sources */,
 				F6B899A22569D0D900F2EA60 /* DnDBActivation.m in Sources */,
+				F6B899F2256A17BE00F2EA60 /* DnDBSpells.m in Sources */,
 				F65E2BCA256831EC00FB6542 /* DnDBCharacterValue.m in Sources */,
+				F6B89A10256ABA7D00F2EA60 /* DnDBSpellActivation.m in Sources */,
 				F65E2BCE256831EC00FB6542 /* DnDBCharacter.m in Sources */,
 				F65E2BE0256831EC00FB6542 /* DnDBCurrencies.m in Sources */,
 				F6B899C02569DC8800F2EA60 /* DnDBNormalSpeed.m in Sources */,
+				F6B89A66256B02F200F2EA60 /* DnDBChoiceOptions.m in Sources */,
+				F6B899FC256A188F00F2EA60 /* DnDBSpell.m in Sources */,
 				F65E2BD9256831EC00FB6542 /* DnDBThemeColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

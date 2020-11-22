@@ -107,7 +107,7 @@ void Crit(NSError* error)
 {
     if (error)
     {
-        printf("%s", [error cStringUsingEncoding: NSUTF8StringEncoding]);
+        printf("%s", [error.description cStringUsingEncoding: NSUTF8StringEncoding]);
     }
     
     printf("Counterspelled! That didn't work. \nTry %s -help", [selfe cStringUsingEncoding: NSUTF8StringEncoding]);
@@ -177,7 +177,7 @@ void Dump(NSString* source,
     {
         NSError*    error       =   nil;
         NSURL*      earl        =   [NSURL URLWithString: source];
-        NSData*     jsonData    =   [NSData dataWithContentsOfURL: url];
+        NSData*     jsonData    =   [NSData dataWithContentsOfURL: earl];
         NSObject*   output;
 
         if (asDictionary)
