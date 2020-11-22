@@ -2,7 +2,11 @@
 
 https://github.com/mouser/BeyondDnD
 
-BeyondDnD, a framework to go beyond DnD Beyond. Like, far far away.
+**BeyondDnD, a framework to go beyond DnD Beyond. Like, far far away.**
+
+## License
+
+This code is **free** for anyone to use, no questions asked, under the terms of the GPL3 license.
 
 ## What this is NOT
 
@@ -22,13 +26,13 @@ Fitness of this is highly dependant on external people to not alter their JSON s
 
 ## What this is, fer real
 
-This is an Objective-C framework that interprets DnDB's JSON format assaociated with a character file.
-Using a simple API, it can load, interpret the data set in a non-lossy fashion. That is, any encountered
+This is an Objective-C framework that interprets DnDB's JSON format associated with a character file.
+Using a simple API, it can load and interpret the data set in a non-lossy fashion. That is, any encountered
 data it doesn't know is reported for further development, and retained in memory to allow digging
 through it in code that makes use of this framework.
 
 It's written exclusively in Objective-C, because I'm civilized. Wether you use this in your own language
-is your own decision to make. Pitty the fools who don't use true runtime objects.
+is your own decision to make. Pity the fools who don't use true runtime objects.
 Structs suck kobold meat balls.
 
 ## Support
@@ -46,7 +50,7 @@ to build your next game with.
 
 I have written my own DnD DM tool for some time and while I had my own format of a character structure,
 it was purposely not meant to be a replacement for DnDBeyond. But at some point, I integrated minimal
-support for importing data from DnDBeyond in the form of charecter preview image, basic info like XP total
+support for importing data from DnDBeyond in the form of character preview image, basic info like XP total
 and character name should it change.
 
 The full DnDBeyond JSON format, though, is not entirely structured; some structures have no unique names
@@ -73,11 +77,13 @@ in their base class, in the _dojUnknownValues_ property.
 ### Model
 These are the classes that map the JSON structure into consumable Objective-C classes.
 Most of that is just empty classes that define properties that map to the JSON data. There
-are two exceptions for the most part:
+are some exceptions for the most part:
 
 Data identified by _id_ and _description_ had to be remapped because of name collisions in
 Cocoa. Any JSON _id_ object gets re-interpreted as _id_endity_. Likewise, any _description_
-JSON data gets remapped to _desc_.
+JSON data gets remapped to _desc_. Furthermore, a 'class' property was renamed 'dClass'
+and there are likely other cases like this. If a model class need to map a property to something
+else, you will see it in their _-setValue:forKey:_ methods.
 
 These classes are meant to be a transposition of the JSOPN structures. DON'T put additional
 methods and properties in there. One day, maybe, we'll be reusing these to re-generate JSON

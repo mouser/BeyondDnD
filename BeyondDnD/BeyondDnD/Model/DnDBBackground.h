@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DnDBBackground : DoJSONBase
 
+@property (nonatomic, retain) NSNumber*     hasCustomBackground;
+@property (nonatomic, retain) NSObject*     definition; //TBD
+
 #warning TODO
 
 /*
@@ -55,41 +58,6 @@ NS_ASSUME_NONNULL_BEGIN
            "description": "I’m driven by a wanderlust that led me away from home.",
            "diceRoll": 1
          },
-         {
-           "id": 613,
-           "description": "I watch over my friends as if they were a litter of newborn pups.",
-           "diceRoll": 2
-         },
-         {
-           "id": 614,
-           "description": "I once ran twenty-five miles without stopping to warn to my clan of an approaching orc horde. I’d do it again if I had to.",
-           "diceRoll": 3
-         },
-         {
-           "id": 615,
-           "description": "I have a lesson for every situation, drawn from observing nature.",
-           "diceRoll": 4
-         },
-         {
-           "id": 616,
-           "description": "I place no stock in wealthy or well-mannered folk. Money and manners won’t save you from a hungry owlbear.",
-           "diceRoll": 5
-         },
-         {
-           "id": 617,
-           "description": "I’m always picking things up, absently fiddling with them, and sometimes accidentally breaking them.",
-           "diceRoll": 6
-         },
-         {
-           "id": 618,
-           "description": "I feel far more comfortable around animals than people.",
-           "diceRoll": 7
-         },
-         {
-           "id": 619,
-           "description": "I was, in fact, raised by wolves.",
-           "diceRoll": 8
-         }
        ],
        "ideals": [
          {
@@ -97,31 +65,6 @@ NS_ASSUME_NONNULL_BEGIN
            "description": "Change. Life is like the seasons, in constant change, and we must change with it. (Chaotic)",
            "diceRoll": 1
          },
-         {
-           "id": 621,
-           "description": "Greater Good. It is each person’s responsibility to make the most happiness for the whole tribe. (Good)",
-           "diceRoll": 2
-         },
-         {
-           "id": 622,
-           "description": "Honor. If I dishonor myself, I dishonor my whole clan. (Lawful)",
-           "diceRoll": 3
-         },
-         {
-           "id": 623,
-           "description": "Might. The strongest are meant to rule. (Evil)",
-           "diceRoll": 4
-         },
-         {
-           "id": 624,
-           "description": "Nature. The natural world is more important than all the constructs of civilization. (Neutral)",
-           "diceRoll": 5
-         },
-         {
-           "id": 625,
-           "description": "Glory. I must earn glory in battle, for myself and my clan. (Any)",
-           "diceRoll": 6
-         }
        ],
        "bonds": [
          {
@@ -129,31 +72,6 @@ NS_ASSUME_NONNULL_BEGIN
            "description": "My family, clan, or tribe is the most important thing in my life, even when they are far from me.",
            "diceRoll": 1
          },
-         {
-           "id": 627,
-           "description": "An injury to the unspoiled wilderness of my home is an injury to me.",
-           "diceRoll": 2
-         },
-         {
-           "id": 628,
-           "description": "I will bring terrible wrath down on the evildoers who destroyed my homeland.",
-           "diceRoll": 3
-         },
-         {
-           "id": 629,
-           "description": "I am the last of my tribe, and it is up to me to ensure their names enter legend.",
-           "diceRoll": 4
-         },
-         {
-           "id": 630,
-           "description": "I suffer awful visions of a coming disaster and will do anything to prevent it.",
-           "diceRoll": 5
-         },
-         {
-           "id": 631,
-           "description": "It is my duty to provide children to sustain my tribe.",
-           "diceRoll": 6
-         }
        ],
        "flaws": [
          {
@@ -161,31 +79,6 @@ NS_ASSUME_NONNULL_BEGIN
            "description": "I am too enamored of ale, wine, and other intoxicants.",
            "diceRoll": 1
          },
-         {
-           "id": 633,
-           "description": "There’s no room for caution in a life lived to the fullest.",
-           "diceRoll": 2
-         },
-         {
-           "id": 634,
-           "description": "I remember every insult I’ve received and nurse a silent resentment toward anyone who’s ever wronged me.",
-           "diceRoll": 3
-         },
-         {
-           "id": 635,
-           "description": "I am slow to trust members of other races, tribes, and societies.",
-           "diceRoll": 4
-         },
-         {
-           "id": 636,
-           "description": "Violence is my answer to almost any challenge.",
-           "diceRoll": 5
-         },
-         {
-           "id": 637,
-           "description": "Don’t expect me to save those who can’t save themselves. It is nature’s way that the strong thrive and the weak perish.",
-           "diceRoll": 6
-         }
        ]
      },
      "characteristicsBackground": {
@@ -219,41 +112,6 @@ NS_ASSUME_NONNULL_BEGIN
            "description": "I’ve been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.",
            "diceRoll": 1
          },
-         {
-           "id": 252,
-           "description": "I am utterly serene, even in the face of disaster.",
-           "diceRoll": 2
-         },
-         {
-           "id": 253,
-           "description": "The leader of my community had something wise to say on every topic, and I am eager to share that wisdom.",
-           "diceRoll": 3
-         },
-         {
-           "id": 254,
-           "description": "I feel tremendous empathy for all who suffer.",
-           "diceRoll": 4
-         },
-         {
-           "id": 255,
-           "description": "I’m oblivious to etiquette and social expectations.",
-           "diceRoll": 5
-         },
-         {
-           "id": 256,
-           "description": "I connect everything that happens to me to a grand, cosmic plan.",
-           "diceRoll": 6
-         },
-         {
-           "id": 257,
-           "description": "I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.",
-           "diceRoll": 7
-         },
-         {
-           "id": 258,
-           "description": "I am working on a grand philosophical theory and love sharing my ideas.",
-           "diceRoll": 8
-         }
        ],
        "ideals": [
          {
@@ -261,31 +119,6 @@ NS_ASSUME_NONNULL_BEGIN
            "description": "Greater Good. My gifts are meant to be shared with all, not used for my own benefit. (Good)",
            "diceRoll": 1
          },
-         {
-           "id": 260,
-           "description": "Logic. Emotions must not cloud our sense of what is right and true, or our logical thinking. (Lawful)",
-           "diceRoll": 2
-         },
-         {
-           "id": 261,
-           "description": "Free Thinking. Inquiry and curiosity are the pillars of progress. (Chaotic)",
-           "diceRoll": 3
-         },
-         {
-           "id": 262,
-           "description": "Power. Solitude and contemplation are paths toward mystical or magical power. (Evil)",
-           "diceRoll": 4
-         },
-         {
-           "id": 263,
-           "description": "Live and Let Live. Meddling in the affairs of others only causes trouble. (Neutral)",
-           "diceRoll": 5
-         },
-         {
-           "id": 264,
-           "description": "Self-Knowledge. If you know yourself, there’s nothing left to know. (Any)",
-           "diceRoll": 6
-         }
        ],
        "bonds": [
          {
@@ -293,31 +126,6 @@ NS_ASSUME_NONNULL_BEGIN
            "description": "Nothing is more important than the other members of my hermitage, order, or association.",
            "diceRoll": 1
          },
-         {
-           "id": 266,
-           "description": "I entered seclusion to hide from the ones who might still be hunting me. I must someday confront them.",
-           "diceRoll": 2
-         },
-         {
-           "id": 267,
-           "description": "I’m still seeking the enlightenment I pursued in my seclusion, and it still eludes me.",
-           "diceRoll": 3
-         },
-         {
-           "id": 268,
-           "description": "I entered seclusion because I loved someone I could not have.",
-           "diceRoll": 4
-         },
-         {
-           "id": 269,
-           "description": "Should my discovery come to light, it could bring ruin to the world.",
-           "diceRoll": 5
-         },
-         {
-           "id": 270,
-           "description": "My isolation gave me great insight into a great evil that only I can destroy.",
-           "diceRoll": 6
-         }
        ],
        "flaws": [
          {
@@ -325,31 +133,6 @@ NS_ASSUME_NONNULL_BEGIN
            "description": "Now that I’ve returned to the world, I enjoy its delights a little too much.",
            "diceRoll": 1
          },
-         {
-           "id": 272,
-           "description": "I harbor dark, bloodthirsty thoughts that my isolation and meditation failed to quell.",
-           "diceRoll": 2
-         },
-         {
-           "id": 273,
-           "description": "I am dogmatic in my thoughts and philosophy.",
-           "diceRoll": 3
-         },
-         {
-           "id": 274,
-           "description": "I let my need to win arguments overshadow friendships and harmony.",
-           "diceRoll": 4
-         },
-         {
-           "id": 275,
-           "description": "I’d risk too much to uncover a lost bit of knowledge.",
-           "diceRoll": 5
-         },
-         {
-           "id": 276,
-           "description": "I like keeping secrets and won’t share them with anyone.",
-           "diceRoll": 6
-         }
        ]
      },
      "backgroundType": 3
