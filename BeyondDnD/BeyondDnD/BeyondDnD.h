@@ -17,6 +17,15 @@ FOUNDATION_EXPORT const unsigned char BeyondDnDVersionString[];
 
 
 #import <BeyondDnD/DoJSONBase.h>
+#import <BeyondDnD/DnDBNormalSpeed.h>
+#import <BeyondDnD/DnDBModifiers.h>
+#import <BeyondDnD/DnDBModifier.h>
+#import <BeyondDnD/DnDBActivation.h>
+#import <BeyondDnD/DnDBRacialTrait.h>
+#import <BeyondDnD/DnDBActivation.h>
+#import <BeyondDnD/DnDBRacialTraits.h>
+#import <BeyondDnD/DnDBRacialTrait.h>
+#import <BeyondDnD/DnDBWeightSpeeds.h>
 #import <BeyondDnD/DnDBBackground.h>
 #import <BeyondDnD/DnDBCampaign.h>
 #import <BeyondDnD/DnDBCharacter.h>

@@ -53,6 +53,18 @@
 		F6B89925256888BB00F2EA60 /* BeyondDnD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65E2B88256831B100FB6542 /* BeyondDnD.framework */; };
 		F6B89926256888BB00F2EA60 /* BeyondDnD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F65E2B88256831B100FB6542 /* BeyondDnD.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F6B89970256891D500F2EA60 /* BeyondDnD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65E2B88256831B100FB6542 /* BeyondDnD.framework */; };
+		F6B899972569CF5400F2EA60 /* DnDBRacialTrait.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899952569CF5400F2EA60 /* DnDBRacialTrait.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899982569CF5400F2EA60 /* DnDBRacialTrait.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899962569CF5400F2EA60 /* DnDBRacialTrait.m */; };
+		F6B899A12569D0D900F2EA60 /* DnDBActivation.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B8999F2569D0D900F2EA60 /* DnDBActivation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899A22569D0D900F2EA60 /* DnDBActivation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899A02569D0D900F2EA60 /* DnDBActivation.m */; };
+		F6B899AD2569D54800F2EA60 /* DnDBWeightSpeeds.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899AB2569D54800F2EA60 /* DnDBWeightSpeeds.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899AE2569D54800F2EA60 /* DnDBWeightSpeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899AC2569D54800F2EA60 /* DnDBWeightSpeeds.m */; };
+		F6B899B52569D78200F2EA60 /* DnDBRacialTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899B32569D78200F2EA60 /* DnDBRacialTraits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899B62569D78200F2EA60 /* DnDBRacialTraits.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899B42569D78200F2EA60 /* DnDBRacialTraits.m */; };
+		F6B899BF2569DC8800F2EA60 /* DnDBNormalSpeed.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899BD2569DC8800F2EA60 /* DnDBNormalSpeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899C02569DC8800F2EA60 /* DnDBNormalSpeed.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899BE2569DC8800F2EA60 /* DnDBNormalSpeed.m */; };
+		F6B899C92569DF2300F2EA60 /* DnDBModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B899C72569DF2300F2EA60 /* DnDBModifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B899CA2569DF2300F2EA60 /* DnDBModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899C82569DF2300F2EA60 /* DnDBModifier.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +156,18 @@
 		F65E2C322568414100FB6542 /* CommandLineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CommandLineTests.m; path = BeyondDnDUnitTests/CommandLineTests.m; sourceTree = SOURCE_ROOT; };
 		F6B899172568887F00F2EA60 /* bdnd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bdnd; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B899192568887F00F2EA60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6B899952569CF5400F2EA60 /* DnDBRacialTrait.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBRacialTrait.h; sourceTree = "<group>"; };
+		F6B899962569CF5400F2EA60 /* DnDBRacialTrait.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBRacialTrait.m; sourceTree = "<group>"; };
+		F6B8999F2569D0D900F2EA60 /* DnDBActivation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBActivation.h; sourceTree = "<group>"; };
+		F6B899A02569D0D900F2EA60 /* DnDBActivation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBActivation.m; sourceTree = "<group>"; };
+		F6B899AB2569D54800F2EA60 /* DnDBWeightSpeeds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBWeightSpeeds.h; sourceTree = "<group>"; };
+		F6B899AC2569D54800F2EA60 /* DnDBWeightSpeeds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBWeightSpeeds.m; sourceTree = "<group>"; };
+		F6B899B32569D78200F2EA60 /* DnDBRacialTraits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBRacialTraits.h; sourceTree = "<group>"; };
+		F6B899B42569D78200F2EA60 /* DnDBRacialTraits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBRacialTraits.m; sourceTree = "<group>"; };
+		F6B899BD2569DC8800F2EA60 /* DnDBNormalSpeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBNormalSpeed.h; sourceTree = "<group>"; };
+		F6B899BE2569DC8800F2EA60 /* DnDBNormalSpeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBNormalSpeed.m; sourceTree = "<group>"; };
+		F6B899C72569DF2300F2EA60 /* DnDBModifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBModifier.h; sourceTree = "<group>"; };
+		F6B899C82569DF2300F2EA60 /* DnDBModifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBModifier.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,8 +257,20 @@
 				F65E2BA9256831EB00FB6542 /* DnDBInventoryItem.m */,
 				F65E2BB8256831EC00FB6542 /* DnDBInventoryItemDefinition.h */,
 				F65E2BB0256831EC00FB6542 /* DnDBInventoryItemDefinition.m */,
+				F6B899C72569DF2300F2EA60 /* DnDBModifier.h */,
+				F6B899C82569DF2300F2EA60 /* DnDBModifier.m */,
 				F65E2BB2256831EC00FB6542 /* DnDBModifiers.h */,
 				F65E2BB3256831EC00FB6542 /* DnDBModifiers.m */,
+				F6B8999F2569D0D900F2EA60 /* DnDBActivation.h */,
+				F6B899A02569D0D900F2EA60 /* DnDBActivation.m */,
+				F6B899B32569D78200F2EA60 /* DnDBRacialTraits.h */,
+				F6B899B42569D78200F2EA60 /* DnDBRacialTraits.m */,
+				F6B899952569CF5400F2EA60 /* DnDBRacialTrait.h */,
+				F6B899962569CF5400F2EA60 /* DnDBRacialTrait.m */,
+				F6B899BD2569DC8800F2EA60 /* DnDBNormalSpeed.h */,
+				F6B899BE2569DC8800F2EA60 /* DnDBNormalSpeed.m */,
+				F6B899AB2569D54800F2EA60 /* DnDBWeightSpeeds.h */,
+				F6B899AC2569D54800F2EA60 /* DnDBWeightSpeeds.m */,
 				F65E2BBD256831EC00FB6542 /* DnDBRace.h */,
 				F65E2BC5256831EC00FB6542 /* DnDBRace.m */,
 				F65E2BAA256831EB00FB6542 /* DnDBSpellSlot.h */,
@@ -302,18 +338,24 @@
 				F65E2BC9256831EC00FB6542 /* DnDBCharacterProxy.h in Headers */,
 				F65E2BDF256831EC00FB6542 /* DnDBRace.h in Headers */,
 				F65E2BCD256831EC00FB6542 /* DnDBCurrencies.h in Headers */,
+				F6B899A12569D0D900F2EA60 /* DnDBActivation.h in Headers */,
 				F65E2BF92568381F00FB6542 /* BeyondDnDSheet.h in Headers */,
 				F65E2BE2256831EC00FB6542 /* DnDBStat.h in Headers */,
+				F6B899C92569DF2300F2EA60 /* DnDBModifier.h in Headers */,
 				F65E2BD6256831EC00FB6542 /* DnDBBackground.h in Headers */,
 				F65E2BDD256831EC00FB6542 /* DnDBClass.h in Headers */,
 				F65E2BDB256831EC00FB6542 /* DnDBThemeColor.h in Headers */,
 				F65E2BDE256831EC00FB6542 /* DnDBCharacter.h in Headers */,
+				F6B899AD2569D54800F2EA60 /* DnDBWeightSpeeds.h in Headers */,
 				F65E2BD7256831EC00FB6542 /* DnDBCharacterCustomItem.h in Headers */,
 				F65E2BE8256831EC00FB6542 /* DnDBDeathSaves.h in Headers */,
+				F6B899972569CF5400F2EA60 /* DnDBRacialTrait.h in Headers */,
 				F65E2BF0256832A500FB6542 /* DoJSONBase.h in Headers */,
 				F65E2BC7256831EC00FB6542 /* DnDBCharacterValue.h in Headers */,
 				F65E2BE4256831EC00FB6542 /* DnDBInventoryItem.h in Headers */,
 				F65E2B99256831B100FB6542 /* BeyondDnD.h in Headers */,
+				F6B899B52569D78200F2EA60 /* DnDBRacialTraits.h in Headers */,
+				F6B899BF2569DC8800F2EA60 /* DnDBNormalSpeed.h in Headers */,
 				F65E2BD0256831EC00FB6542 /* DnDBDefaultBackdrop.h in Headers */,
 				F65E2BCC256831EC00FB6542 /* DnDBSpellSlot.h in Headers */,
 				F65E2BDA256831EC00FB6542 /* DnDBInventoryItemDefinition.h in Headers */,
@@ -442,24 +484,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B899CA2569DF2300F2EA60 /* DnDBModifier.m in Sources */,
 				F65E2BCB256831EC00FB6542 /* DnDBInventoryItem.m in Sources */,
 				F65E2BC8256831EC00FB6542 /* DnDBCharacterCustomItem.m in Sources */,
 				F65E2BDC256831EC00FB6542 /* DnDBCampaign.m in Sources */,
 				F65E2BE6256831EC00FB6542 /* DnDBDefaultBackdrop.m in Sources */,
+				F6B899B62569D78200F2EA60 /* DnDBRacialTraits.m in Sources */,
 				F65E2BD2256831EC00FB6542 /* DnDBInventoryItemDefinition.m in Sources */,
 				F65E2BE7256831EC00FB6542 /* DnDBRace.m in Sources */,
 				F65E2BCF256831EC00FB6542 /* DnDBStat.m in Sources */,
 				F65E2BE1256831EC00FB6542 /* DnDBClass.m in Sources */,
+				F6B899982569CF5400F2EA60 /* DnDBRacialTrait.m in Sources */,
 				F65E2BD5256831EC00FB6542 /* DnDBModifiers.m in Sources */,
 				F65E2BE3256831EC00FB6542 /* DnDBDeathSaves.m in Sources */,
+				F6B899AE2569D54800F2EA60 /* DnDBWeightSpeeds.m in Sources */,
 				F65E2BD3256831EC00FB6542 /* DnDBCharacterProxy.m in Sources */,
 				F65E2BF1256832A500FB6542 /* DoJSONBase.m in Sources */,
 				F65E2BD8256831EC00FB6542 /* DnDBSpellSlot.m in Sources */,
 				F65E2BFA2568381F00FB6542 /* BeyondDnDSheet.m in Sources */,
 				F65E2BE5256831EC00FB6542 /* DnDBBackground.m in Sources */,
+				F6B899A22569D0D900F2EA60 /* DnDBActivation.m in Sources */,
 				F65E2BCA256831EC00FB6542 /* DnDBCharacterValue.m in Sources */,
 				F65E2BCE256831EC00FB6542 /* DnDBCharacter.m in Sources */,
 				F65E2BE0256831EC00FB6542 /* DnDBCurrencies.m in Sources */,
+				F6B899C02569DC8800F2EA60 /* DnDBNormalSpeed.m in Sources */,
 				F65E2BD9256831EC00FB6542 /* DnDBThemeColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

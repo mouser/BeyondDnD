@@ -225,7 +225,7 @@
 {
     NSInteger adjustedStat  =   [self rawStat: stat]
                             +   [self findStat: stat inBlock: self.character.bonusStats]
-                            +   [self findStat: stat inBlock: self.character.overrideStats];
+                            +   [self findStat: stat inBlock: self.character.overrideStats];//should this overwrite all info or supplement it??
     
     return adjustedStat;
 }
