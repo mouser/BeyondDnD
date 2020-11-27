@@ -17,6 +17,25 @@ typedef enum : NSInteger {
     expertise
 } SkillLevel;
 
+#define kSkill_Acrobatic            @"Acrobatic"
+#define kSkill_Animal               @"Animal"
+#define kSkill_Arcana               @"Arcana"
+#define kSkill_Athletic             @"Athletic"
+#define kSkill_Deception            @"Deception"
+#define kSkill_History              @"History"
+#define kSkill_Insight              @"Insight"
+#define kSkill_Intimidation         @"Intimidation"
+#define kSkill_Investigation        @"Investigation"
+#define kSkill_Medecine             @"Medecine"
+#define kSkill_Nature               @"Nature"
+#define kSkill_Perception           @"Perception"
+#define kSkill_Performance          @"Performance"
+#define kSkill_Persuasion           @"Persuasion"
+#define kSkill_Religion             @"Religion"
+#define kSkill_SleightOfHand        @"SleightOfHand"
+#define kSkill_Stealth              @"Stealth"
+#define kSkill_Survival             @"Survival"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BeyondDnDSheet : NSObject
@@ -41,8 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString*)       player;
 - (NSString*)       information;
-- (BOOL)            NPC;
-- (NSInteger)       Init;
+- (NSInteger)       initiative;
 
 - (NSInteger)       STR;
 - (BOOL)            STRSaves;

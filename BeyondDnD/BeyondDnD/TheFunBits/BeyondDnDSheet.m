@@ -9,34 +9,30 @@
 #import "BeyondDnDSheet.h"
 @import Cocoa;
 
+#pragma mark - internal structure values
+
+#define kDnDB_initiative        @"initiative"
+#define kDnDB_advantage         @"advantage"
+
+#pragma mark - Web Access URLs
 #define kDNDB_CharacterPrefix   @"https://www.dndbeyond.com/character"
 #define kDNDB_CharactersPage    @"https://www.dndbeyond.com/characters/"
 #define kDNDB_SingleCharacter   @"https://www.dndbeyond.com/character/"
 #define kDNDB_JSON_path         @"json"
-#define kDNDB_JSON_STAT_ID      @"id"
-#define kDNDB_JSON_STAT_NAME    @"name" /*unused by DnDB*/
-#define kDNDB_JSON_STAT_VALUE   @"value"
 
-#define kDNDB_CurrentXP         @"currentXp"
-#define kDNDB_BaseHitPoints     @"baseHitPoints"
-#define kDNDB_TempHitPoints     @"overrideHitPoints"
-#define kDNDB_Name              @"name"
-#define kDNDB_Campaign          @"campaign"
-#define kDNDB_Characters        @"characters"
-
-//  @[@{id:1, value: n}, ..., @{id:6, value: n}]
-#define kDNDB_Stats             @"stats"
+#pragma mark - Private class info
 
 @interface BeyondDnDSheet()
 
 @property (nonatomic, retain) DnDBCharacter*            character;
 
-@property (nonatomic, retain) NSMutableDictionary*      charPartyData;
-
 @property (nonatomic, retain) NSImage*                  cashedSnapshot;
+
 @end
 
 @implementation BeyondDnDSheet
+
+#pragma mark - Instiantiation
 
 + (instancetype _Nullable) fromCharacterURL: (NSURL*) url
 {
@@ -62,6 +58,11 @@
     return characterPath;
 }
 
+- (NSString*) information
+{
+    return self.character.description;
+}
+
 - (NSInteger) integerFromJSonNumber: (id<NSObject>) someValue
 {
     NSInteger   result  =   0;
@@ -80,8 +81,6 @@
     
     if (self)
     {
-        NSString*               characterID =   url.absoluteString.lastPathComponent;
-
         url = [NSURL URLWithString: [self.class jSonPathFrom: url.absoluteString]];
     
         NSData*                 jsonData    =   [NSData dataWithContentsOfURL: url];
@@ -96,31 +95,6 @@
             self.character = DnDBCharacter.new;
             
             [self.character setValuesForKeysWithDictionary: jsonDict];
-            
-            // TODO: old code to remove
-            
-            //drill down to useful stuff
-            NSMutableDictionary*    campaign            =   jsonDict[kDNDB_Campaign];     //campaign associated with this particular character
-            NSArray*                campaignCharacters  =   campaign[kDNDB_Characters];   //characters associated with this campaign
-            
-            if (campaignCharacters.count)
-            {
-                for (NSDictionary* aCharDict in campaignCharacters)
-                {
-                    NSString*   thisPCID    =   aCharDict[@"characterId"];
-                    
-                    if ([thisPCID.description isEqualToString: characterID])
-                    {
-                        self.charPartyData = (id) aCharDict;
-                        break;
-                    }
-                }
-            }
-            else
-            {
-                //nothing to see; trash self & return nil
-                self = nil;
-            }
         }
         else
         {
@@ -131,6 +105,8 @@
     
     return self;
 }
+
+#pragma mark - Utilities
 
 - (NSInteger) levelFrom: (NSInteger) xp
 {
@@ -177,12 +153,15 @@
 {
     if (!_cashedSnapshot)
     {
-        NSString*   urlString =   self.charPartyData[@"avatarUrl"];
+        NSString*   urlString =   [self currentProxy].avatarUrl;
         
-        _cashedSnapshot = [[NSImage alloc] initWithContentsOfURL: [NSURL URLWithString: urlString]];
+        if (urlString.length)
+        {
+            _cashedSnapshot = [[NSImage alloc] initWithContentsOfURL: [NSURL URLWithString: urlString]];
+        }
     }
     
-    return _cashedSnapshot;
+    return self.cashedSnapshot;
 }
 
 - (NSInteger) level
@@ -193,6 +172,30 @@
 - (NSString*) name
 {
     return self.character.name;
+}
+
+- (DnDBCharacterProxy*) currentProxy
+{
+    DnDBCharacterProxy*     result          =   nil;
+    NSNumber*               characterId     =   self.character.id_entification;
+
+    for (DnDBCharacterProxy* aProxy in self.character.campaign.characters)
+    {
+        if ([aProxy.characterId isEqualToNumber: characterId])
+        {
+            result = aProxy;
+            break;
+        }
+    }
+    
+    return result;
+}
+
+- (NSString*) player
+{
+    DnDBCharacterProxy* proxy       =   [self currentProxy];
+    
+    return proxy.username ?: @"";
 }
 
 #pragma mark - Internal support functions for the composite values
@@ -233,6 +236,15 @@
 
 #pragma mark - Sheet composite values
 
+- (BOOL) savesOn: (DnDBStatID) stat
+{
+    BOOL    saves   =   NO;
+    
+#warning TO DO find where this is hidden
+    
+    return saves;
+}
+
 - (NSInteger) STR
 {
     return [self adjustedStat: DnDBStat_STR];
@@ -240,8 +252,7 @@
 
 - (BOOL) STRSaves
 {
-#warning TO DO I have yet to find where a character is known to save on this stat
-    return NO;
+    return [self savesOn: DnDBStat_STR];
 }
 
 - (NSInteger) DEX
@@ -251,8 +262,7 @@
 
 - (BOOL) DEXSaves
 {
-#warning TO DO I have yet to find where a character is known to save on this stat
-    return NO;
+    return [self savesOn: DnDBStat_DEX];
 }
 
 - (NSInteger) CON
@@ -262,8 +272,7 @@
 
 - (BOOL) CONSaves
 {
-#warning TO DO I have yet to find where a character is known to save on this stat
-    return NO;
+    return [self savesOn: DnDBStat_CON];
 }
 
 - (NSInteger) INT
@@ -273,8 +282,7 @@
 
 - (BOOL) INTSaves
 {
-#warning TO DO I have yet to find where a character is known to save on this stat
-    return NO;
+    return [self savesOn: DnDBStat_INT];
 }
 
 - (NSInteger) WIZ
@@ -284,8 +292,7 @@
 
 - (BOOL) WIZSaves
 {
-#warning TO DO I have yet to find where a character is known to save on this stat
-    return NO;
+    return [self savesOn: DnDBStat_WIZ];
 }
 
 - (NSInteger) CHA
@@ -295,8 +302,7 @@
 
 - (BOOL) CHASaves
 {
-#warning TO DO I have yet to find where a character is known to save on this stat
-    return NO;
+    return [self savesOn: DnDBStat_CHA];
 }
 
 - (NSInteger) LVL
@@ -343,6 +349,64 @@
     return base;
 }
 
+- (NSInteger) initiative
+{
+    NSInteger   calculatedInit  =   0;
+    
+    for (DnDBModifier* aMod in self.character.modifiers.combinedModifiers)
+    {
+        if ([aMod.subType isEqualToString: kDnDB_initiative]
+        &&  [aMod.type isEqualToString: kDnDB_advantage])
+        {
+            calculatedInit += aMod.value.integerValue ?: 0;
+        }
+    }
+
+    return calculatedInit;
+}
+
+- (SkillLevel) findSkillLevel: (NSString*) skillName
+{
+    SkillLevel  level       =   none;
+    NSString*   skillList   =   @"";//self.character.background.customBackground.featureBackground.skillProficienciesDescription;
+    NSArray*    skills      =   [skillList componentsSeparatedByString: @","];
+
+#warning TO DO there are probably other classes features that add skills
+#warning TO DO still haven't found proficiency level so we consider ON|OFF for now. Could it be lurking in modifiers?
+    
+    //    modifiers.class[].
+    //    "id": "classFeature_63_1839586",
+    //    "entityId": null,
+    //    "entityTypeId": null,
+    //    "type": "advantage",              <---- suspect #1 maybe "level" or "skillLevel" &
+    //    "subType": "initiative",          <---- suspect #2
+    //    "dice": null,
+    //    "restriction": "",
+    //    "statId": null,
+    //    "requiresAttunement": false,
+    //    "duration": null,
+    //    "friendlyTypeName": "Advantage",
+    //    "friendlySubtypeName": "Initiative",
+    //    "isGranted": true,
+    //    "bonusTypes": [],
+    //    "value": null,
+    //    "componentId": 63,
+    //    "componentTypeId": 12168134
+    
+    if ([skills containsObject: skillName])
+    {
+        level = proficient;
+    }
+    
+    return level;
+}
+
+- (NSInteger) passivePerceptionAdjust
+{
+#warning TO DO
+    return 0;
+}
+
 - (NSInteger) passiveIntelligenceAdjust
 {
 #warning TO DO
@@ -357,110 +421,92 @@
 
 - (SkillLevel) skillLevel_Acrobatic
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Acrobatic];
 }
 
 - (SkillLevel) skillLevel_Animal
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Animal];
 }
 
 - (SkillLevel) skillLevel_Arcana
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Arcana];
 }
 
 - (SkillLevel) skillLevel_Athletic
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Athletic];
 }
 
 - (SkillLevel) skillLevel_Deception
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Deception];
 }
 
 - (SkillLevel) skillLevel_History
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_History];
 }
 
 - (SkillLevel) skillLevel_Insight
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Insight];
 }
 
 - (SkillLevel) skillLevel_Intimidation
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Intimidation];
 }
 
 - (SkillLevel) skillLevel_Investigation
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Investigation];
 }
 
 - (SkillLevel) skillLevel_Medecine
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Medecine];
 }
 
 - (SkillLevel) skillLevel_Nature
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Nature];
 }
 
 - (SkillLevel) skillLevel_Perception
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Perception];
 }
 
 - (SkillLevel) skillLevel_Performance
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Performance];
 }
 
 - (SkillLevel) skillLevel_Persuasion
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Persuasion];
 }
 
 - (SkillLevel) skillLevel_Religion
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Religion];
 }
 
 - (SkillLevel) skillLevel_SleightOfHand
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_SleightOfHand];
 }
 
 - (SkillLevel) skillLevel_Stealth
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Stealth];
 }
 
 - (SkillLevel) skillLevel_Survival
 {
-#warning TO DO
-    return none;
+    return [self findSkillLevel: kSkill_Survival];
 }
 
 #pragma mark - Game Computed Stats

@@ -77,11 +77,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) NSArray<NSNumber*>*                   activeSourceCategories;
 @property (nonatomic, retain) DnDBSpells*                           spells;
 @property (nonatomic, retain) DnDBCharacterOptions*                 options;
-
 @property (nonatomic, retain) DnDBCharacterChoices*                 choices;
-
 @property (nonatomic, retain) DnDBCharacterActions*                 actions;
-
 @property (nonatomic, retain) NSArray<DnDBCharacterClassSpells*>*   classSpells;
 @property (nonatomic, retain) NSString*                             name;
 @property (nonatomic, retain) NSString*                             socialName;

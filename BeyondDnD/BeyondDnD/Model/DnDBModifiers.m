@@ -36,5 +36,16 @@
     }
 }
 
+- (NSArray<DnDBModifier*>*) combinedModifiers
+{
+    NSMutableArray*     combined    =   NSMutableArray.new;
+    
+    [combined addObjectsFromArray: self.race ?: @[]];
+    [combined addObjectsFromArray: self.dClass ?: @[]];
+    [combined addObjectsFromArray: self.background ?: @[]];
+    [combined addObjectsFromArray: self.item ?: @[]];
+    
+    return combined;
+}
 
 @end

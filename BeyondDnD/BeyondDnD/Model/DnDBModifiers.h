@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) NSArray<NSString*>*           feat;
 @property (nonatomic, retain) NSArray<NSString*>*           condition;
 
+- (NSArray<DnDBModifier*>*) combinedModifiers;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) NSString*                     fullName;           // "Mountain Dwarf",
 @property (nonatomic, retain) NSNumber*                     baseRaceId;         // 13,
 @property (nonatomic, retain) NSNumber*                     baseRaceTypeId;     // 1743923279,
-@property (nonatomic, retain) NSString*                     desc;               // "<p>Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal.</p>\n<p class=\"characters-statblock\" style=\"font-family: Roboto Condensed\"><strong>Racial Traits</strong><br>+2 Constitution, Darkvision, Dwarven Resilience, Dwarven Combat Training, Stonecunning</p><p class=\"Core-Styles_Core-Body\">As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain. You’re probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern Faerûn, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are moun<span class=\"No-Break\">tain dwarves.</span></p>",
+@property (nonatomic, retain) NSString*                     desc;               
 @property (nonatomic, retain) NSString*                     avatarUrl;          // null,
 @property (nonatomic, retain) NSString*                     largeAvatarUrl;     // null,
 @property (nonatomic, retain) NSString*                     portraitAvatarUrl;  // "https://media-waterdeep.cursecdn.com/avatars/9/364/636327456390157492.jpeg",

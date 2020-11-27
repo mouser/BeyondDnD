@@ -227,7 +227,7 @@ NS_ASSUME_NONNULL_BEGIN
            "entityTypeId": 12168134,
            "displayOrder": 2,
            "name": "Proficiencies",
-           "description": "<p><strong><span class=\"Serif-Character-Style_Bold-Serif\">Armor:</span></strong> Light armor, medium armor, shields<br><strong><span class=\"Serif-Character-Style_Bold-Serif\">Weapons:</span></strong> Simple weapons, martial weapons<br><strong><span class=\"Serif-Character-Style_Bold-Serif\">Tools:</span></strong> None<br><strong><span class=\"Serif-Character-Style_Bold-Serif\">Saving Throws:</span></strong> Strength, Constitution<br><strong><span class=\"Serif-Character-Style_Bold-Serif\">Skills: </span></strong>Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival</p>",
+           "description": ""
            "snippet": "",
            "activation": {
              "activationTime": null,
