@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DnDBCharacterOptions : DoJSONBase
 
+#warning TBD need to define content of these
 @property (nonatomic, retain) NSArray*                  race;
 @property (nonatomic, retain) NSArray*                  dClass;
 @property (nonatomic, retain) NSArray*                  feat;

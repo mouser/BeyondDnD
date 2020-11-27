@@ -50,6 +50,14 @@
 		F65E2C1C25683E9300FB6542 /* BeyondDnDUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2C1B25683E9300FB6542 /* BeyondDnDUnitTests.m */; };
 		F65E2C2725683E9F00FB6542 /* Ulfrik.json in Resources */ = {isa = PBXBuildFile; fileRef = F65E2C012568393A00FB6542 /* Ulfrik.json */; };
 		F65E2C332568414100FB6542 /* CommandLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2C322568414100FB6542 /* CommandLineTests.m */; };
+		F697F70C2570956D008306AD /* DnDBCharacterAction.h in Headers */ = {isa = PBXBuildFile; fileRef = F697F70A2570956D008306AD /* DnDBCharacterAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F697F70D2570956D008306AD /* DnDBCharacterAction.m in Sources */ = {isa = PBXBuildFile; fileRef = F697F70B2570956D008306AD /* DnDBCharacterAction.m */; };
+		F697F71925709BF1008306AD /* DnDBActionRange.h in Headers */ = {isa = PBXBuildFile; fileRef = F697F71725709BF1008306AD /* DnDBActionRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F697F71A25709BF1008306AD /* DnDBActionRange.m in Sources */ = {isa = PBXBuildFile; fileRef = F697F71825709BF1008306AD /* DnDBActionRange.m */; };
+		F697F72625709CFD008306AD /* DnDBAttackCustomData.h in Headers */ = {isa = PBXBuildFile; fileRef = F697F72425709CFD008306AD /* DnDBAttackCustomData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F697F72725709CFD008306AD /* DnDBAttackCustomData.m in Sources */ = {isa = PBXBuildFile; fileRef = F697F72525709CFD008306AD /* DnDBAttackCustomData.m */; };
+		F697F73325709E59008306AD /* DnDBCharacterActions.h in Headers */ = {isa = PBXBuildFile; fileRef = F697F73125709E59008306AD /* DnDBCharacterActions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F697F73425709E59008306AD /* DnDBCharacterActions.m in Sources */ = {isa = PBXBuildFile; fileRef = F697F73225709E59008306AD /* DnDBCharacterActions.m */; };
 		F6B8991A2568887F00F2EA60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B899192568887F00F2EA60 /* main.m */; };
 		F6B89925256888BB00F2EA60 /* BeyondDnD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65E2B88256831B100FB6542 /* BeyondDnD.framework */; };
 		F6B89926256888BB00F2EA60 /* BeyondDnD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F65E2B88256831B100FB6542 /* BeyondDnD.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -188,6 +196,14 @@
 		F65E2C1B25683E9300FB6542 /* BeyondDnDUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeyondDnDUnitTests.m; sourceTree = "<group>"; };
 		F65E2C1D25683E9300FB6542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65E2C322568414100FB6542 /* CommandLineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CommandLineTests.m; path = BeyondDnDUnitTests/CommandLineTests.m; sourceTree = SOURCE_ROOT; };
+		F697F70A2570956D008306AD /* DnDBCharacterAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterAction.h; sourceTree = "<group>"; };
+		F697F70B2570956D008306AD /* DnDBCharacterAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterAction.m; sourceTree = "<group>"; };
+		F697F71725709BF1008306AD /* DnDBActionRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBActionRange.h; sourceTree = "<group>"; };
+		F697F71825709BF1008306AD /* DnDBActionRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBActionRange.m; sourceTree = "<group>"; };
+		F697F72425709CFD008306AD /* DnDBAttackCustomData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBAttackCustomData.h; sourceTree = "<group>"; };
+		F697F72525709CFD008306AD /* DnDBAttackCustomData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBAttackCustomData.m; sourceTree = "<group>"; };
+		F697F73125709E59008306AD /* DnDBCharacterActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBCharacterActions.h; sourceTree = "<group>"; };
+		F697F73225709E59008306AD /* DnDBCharacterActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnDBCharacterActions.m; sourceTree = "<group>"; };
 		F6B899172568887F00F2EA60 /* bdnd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bdnd; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B899192568887F00F2EA60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6B899952569CF5400F2EA60 /* DnDBRacialTrait.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnDBRacialTrait.h; sourceTree = "<group>"; };
@@ -335,6 +351,14 @@
 				F6B89A5C256B011000F2EA60 /* DnDBCharacterChoice.m */,
 				F6B89A51256AFFD200F2EA60 /* DnDBCharacterChoices.h */,
 				F6B89A52256AFFD200F2EA60 /* DnDBCharacterChoices.m */,
+				F697F71725709BF1008306AD /* DnDBActionRange.h */,
+				F697F71825709BF1008306AD /* DnDBActionRange.m */,
+				F697F72425709CFD008306AD /* DnDBAttackCustomData.h */,
+				F697F72525709CFD008306AD /* DnDBAttackCustomData.m */,
+				F697F70A2570956D008306AD /* DnDBCharacterAction.h */,
+				F697F70B2570956D008306AD /* DnDBCharacterAction.m */,
+				F697F73125709E59008306AD /* DnDBCharacterActions.h */,
+				F697F73225709E59008306AD /* DnDBCharacterActions.m */,
 				F65E2BBC256831EC00FB6542 /* DnDBCharacter.h */,
 				F65E2BAC256831EC00FB6542 /* DnDBCharacter.m */,
 				F65E2BB5256831EC00FB6542 /* DnDBCharacterCustomItem.h */,
@@ -436,6 +460,7 @@
 				F65E2BC9256831EC00FB6542 /* DnDBCharacterProxy.h in Headers */,
 				F65E2BDF256831EC00FB6542 /* DnDBRace.h in Headers */,
 				F6B89A3F256AD68100F2EA60 /* DnDBCharacterOptions.h in Headers */,
+				F697F72625709CFD008306AD /* DnDBAttackCustomData.h in Headers */,
 				F6B899E7256A14D700F2EA60 /* DnDBCharacterPreferences.h in Headers */,
 				F65E2BCD256831EC00FB6542 /* DnDBCurrencies.h in Headers */,
 				F6B899FB256A188F00F2EA60 /* DnDBSpell.h in Headers */,
@@ -447,12 +472,14 @@
 				F6B899C92569DF2300F2EA60 /* DnDBModifier.h in Headers */,
 				F65E2BD6256831EC00FB6542 /* DnDBBackground.h in Headers */,
 				F65E2BDD256831EC00FB6542 /* DnDBClass.h in Headers */,
+				F697F70C2570956D008306AD /* DnDBCharacterAction.h in Headers */,
 				F65E2BDB256831EC00FB6542 /* DnDBThemeColor.h in Headers */,
 				F6B89A65256B02F200F2EA60 /* DnDBChoiceOptions.h in Headers */,
 				F65E2BDE256831EC00FB6542 /* DnDBCharacter.h in Headers */,
 				F6B899AD2569D54800F2EA60 /* DnDBWeightSpeeds.h in Headers */,
 				F65E2BD7256831EC00FB6542 /* DnDBCharacterCustomItem.h in Headers */,
 				F65E2BE8256831EC00FB6542 /* DnDBDeathSaves.h in Headers */,
+				F697F71925709BF1008306AD /* DnDBActionRange.h in Headers */,
 				F6B899972569CF5400F2EA60 /* DnDBRacialTrait.h in Headers */,
 				F6B89A35256AC75100F2EA60 /* DnDBSpellAtHigherLevels.h in Headers */,
 				F65E2BF0256832A500FB6542 /* DoJSONBase.h in Headers */,
@@ -461,6 +488,7 @@
 				F6B89A49256AFC4400F2EA60 /* DnDBCharacterClassSpells.h in Headers */,
 				F65E2B99256831B100FB6542 /* BeyondDnD.h in Headers */,
 				F6B89A0F256ABA7D00F2EA60 /* DnDBSpellActivation.h in Headers */,
+				F697F73325709E59008306AD /* DnDBCharacterActions.h in Headers */,
 				F6B899F1256A17BE00F2EA60 /* DnDBSpells.h in Headers */,
 				F6B899D3256A131B00F2EA60 /* DnDBNotes.h in Headers */,
 				F6B89A05256AB86A00F2EA60 /* DnDBSpellLimitedUse.h in Headers */,
@@ -604,13 +632,16 @@
 				F6B899CA2569DF2300F2EA60 /* DnDBModifier.m in Sources */,
 				F65E2BCB256831EC00FB6542 /* DnDBInventoryItem.m in Sources */,
 				F6B89A22256ABECB00F2EA60 /* DnDBSpellDefinition.m in Sources */,
+				F697F71A25709BF1008306AD /* DnDBActionRange.m in Sources */,
 				F65E2BC8256831EC00FB6542 /* DnDBCharacterCustomItem.m in Sources */,
+				F697F73425709E59008306AD /* DnDBCharacterActions.m in Sources */,
 				F6B899D4256A131B00F2EA60 /* DnDBNotes.m in Sources */,
 				F65E2BDC256831EC00FB6542 /* DnDBCampaign.m in Sources */,
 				F65E2BE6256831EC00FB6542 /* DnDBDefaultBackdrop.m in Sources */,
 				F6B899B62569D78200F2EA60 /* DnDBRacialTraits.m in Sources */,
 				F65E2BD2256831EC00FB6542 /* DnDBInventoryItemDefinition.m in Sources */,
 				F6B899DE256A143A00F2EA60 /* DnDBCharacterTraits.m in Sources */,
+				F697F72725709CFD008306AD /* DnDBAttackCustomData.m in Sources */,
 				F65E2BE7256831EC00FB6542 /* DnDBRace.m in Sources */,
 				F6B89A2C256AC63E00F2EA60 /* DnDBSpellDuration.m in Sources */,
 				F65E2BCF256831EC00FB6542 /* DnDBStat.m in Sources */,
@@ -623,6 +654,7 @@
 				F6B89A4A256AFC4400F2EA60 /* DnDBCharacterClassSpells.m in Sources */,
 				F6B899AE2569D54800F2EA60 /* DnDBWeightSpeeds.m in Sources */,
 				F65E2BD3256831EC00FB6542 /* DnDBCharacterProxy.m in Sources */,
+				F697F70D2570956D008306AD /* DnDBCharacterAction.m in Sources */,
 				F6B89A54256AFFD200F2EA60 /* DnDBCharacterChoices.m in Sources */,
 				F65E2BF1256832A500FB6542 /* DoJSONBase.m in Sources */,
 				F65E2BD8256831EC00FB6542 /* DnDBSpellSlot.m in Sources */,

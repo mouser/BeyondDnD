@@ -27,6 +27,7 @@
 #import "DnDBDeathSaves.h"
 #import "DnDBSpellSlot.h"
 #import "DnDBCharacterCustomItem.h"
+#import "DnDBCharacterActions.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -79,188 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, retain) DnDBCharacterChoices*                 choices;
 
-
-#warning TO DO
-/*
- Class character.actions.class array not to be confused with class.deinitions.classes array 
-
-   "actions": {
-     "race": [],
-     "class": [
-       {
-         "id": 1009,
-         "entityTypeId": 222216831,
-         "limitedUse": {
-           "name": null,
-           "statModifierUsesId": null,
-           "resetType": 2,
-           "numberUsed": 1,
-           "minNumberConsumed": 1,
-           "maxNumberConsumed": 1,
-           "maxUses": 6,
-           "operator": 1
-         },
-         "name": "Rage",
-         "description": "<p class=\"compendium-hr\">In battle, you fight with primal ferocity. On your turn, you can enter a rage as a&nbsp;<span class=\"No-Break\">bonus action.</span></p>\n<p class=\"Core-Styles_Core-Body-Last--to-apply-extra-space-\">While raging, you gain the following benefits if you aren’t wearing heavy armor:</p>\n<ul>\n<li class=\"Core-Styles_Core-Bulleted\">You have advantage on Strength checks and Strength saving throws.</li>\n<li class=\"Core-Styles_Core-Bulleted\">When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.</li>\n<li class=\"Core-Styles_Core-Bulleted-Last\">You have resistance to bludgeoning, piercing, and slashing damage.</li>\n</ul>\n<p class=\"Core-Styles_Core-Body\">If you are able to cast spells, you can’t cast them or concentrate on them&nbsp;<span class=\"No-Break\">while raging.</span></p>\n<p class=\"Core-Styles_Core-Body\">Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a&nbsp;<span class=\"No-Break\">bonus action.</span></p>\n<p class=\"Core-Styles_Core-Body\">Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you ca<span class=\"No-Break\">n rage again.</span></p>",
-         "snippet": "As a bonus action enter a rage for up to 1 minute (10 rounds). \n\nYou gain advantage on STR checks and saving throws (not attacks), {{scalevalue#signed}} melee damage with STR weapons, resistance to bludgeoning, piercing, slashing damage. You can't cast or concentrate on spells while raging.\n\nYour rage ends early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage as a bonus action.",
-         "abilityModifierStatId": null,
-         "onMissDescription": "",
-         "saveFailDescription": "",
-         "saveSuccessDescription": "",
-         "saveStatId": null,
-         "fixedSaveDc": null,
-         "attackTypeRange": null,
-         "actionType": 3,
-         "attackSubtype": null,
-         "dice": null,
-         "value": null,
-         "damageTypeId": null,
-         "isMartialArts": false,
-         "isProficient": false,
-         "spellRangeType": null,
-         "displayAsAttack": null,
-         "range": {
-           "range": null,
-           "longRange": null,
-           "aoeType": null,
-           "aoeSize": null,
-           "hasAoeSpecialDescription": false
-         },
-         "activation": {
-           "activationTime": 1,
-           "activationType": 3
-         },
-         "attackCustomData": {
-           "name": null,
-           "notes": null,
-           "damageBonus": null,
-           "toHitBonus": null,
-           "toHit": null,
-           "isOffhand": null,
-           "isSilver": null,
-           "isAdamantine": null,
-           "isProficient": null,
-           "saveDcBonus": null,
-           "saveDc": null,
-           "weight": null,
-           "displayAsAttack": null,
-           "cost": null
-         },
-         "componentId": 51,
-         "componentTypeId": 12168134
-       },
-       {
-         "id": 1010,
-         "entityTypeId": 222216831,
-         "limitedUse": null,
-         "name": "Relentless Rage",
-         "description": null,
-         "snippet": "If you drop to 0 hit points while you’re raging and don’t die, you can make a DC 10 CON saving throw. If you succeed, you drop to 1 hit point instead. \n\nThe DC increase by 5 each time you use this after the first, resetting to 10 after a short or long rest.",
-         "abilityModifierStatId": null,
-         "onMissDescription": null,
-         "saveFailDescription": null,
-         "saveSuccessDescription": null,
-         "saveStatId": null,
-         "fixedSaveDc": null,
-         "attackTypeRange": null,
-         "actionType": 3,
-         "attackSubtype": null,
-         "dice": null,
-         "value": null,
-         "damageTypeId": null,
-         "isMartialArts": false,
-         "isProficient": false,
-         "spellRangeType": null,
-         "displayAsAttack": null,
-         "range": {
-           "range": null,
-           "longRange": null,
-           "aoeType": null,
-           "aoeSize": null,
-           "hasAoeSpecialDescription": false
-         },
-         "activation": {
-           "activationTime": null,
-           "activationType": null
-         },
-         "attackCustomData": {
-           "name": null,
-           "notes": null,
-           "damageBonus": null,
-           "toHitBonus": null,
-           "toHit": null,
-           "isOffhand": null,
-           "isSilver": null,
-           "isAdamantine": null,
-           "isProficient": null,
-           "saveDcBonus": null,
-           "saveDc": null,
-           "weight": null,
-           "displayAsAttack": null,
-           "cost": null
-         },
-         "componentId": 67,
-         "componentTypeId": 12168134
-       },
-       {
-         "id": 53459,
-         "entityTypeId": 222216831,
-         "limitedUse": null,
-         "name": "Spirit Shield",
-         "description": "",
-         "snippet": "If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by {{scalevalue}}",
-         "abilityModifierStatId": null,
-         "onMissDescription": "",
-         "saveFailDescription": "",
-         "saveSuccessDescription": "",
-         "saveStatId": null,
-         "fixedSaveDc": null,
-         "attackTypeRange": null,
-         "actionType": 3,
-         "attackSubtype": null,
-         "dice": null,
-         "value": null,
-         "damageTypeId": null,
-         "isMartialArts": false,
-         "isProficient": false,
-         "spellRangeType": null,
-         "displayAsAttack": null,
-         "range": {
-           "range": null,
-           "longRange": null,
-           "aoeType": null,
-           "aoeSize": null,
-           "hasAoeSpecialDescription": false
-         },
-         "activation": {
-           "activationTime": 1,
-           "activationType": 4
-         },
-         "attackCustomData": {
-           "name": null,
-           "notes": null,
-           "damageBonus": null,
-           "toHitBonus": null,
-           "toHit": null,
-           "isOffhand": null,
-           "isSilver": null,
-           "isAdamantine": null,
-           "isProficient": null,
-           "saveDcBonus": null,
-           "saveDc": null,
-           "weight": null,
-           "displayAsAttack": null,
-           "cost": null
-         },
-         "componentId": 637,
-         "componentTypeId": 12168134
-       }
-     ],
-     "feat": []
-   },
- }
-
- */
+@property (nonatomic, retain) DnDBCharacterActions*                 actions;
 
 @property (nonatomic, retain) NSArray<DnDBCharacterClassSpells*>*   classSpells;
 @property (nonatomic, retain) NSString*                             name;
@@ -293,3 +113,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+ 

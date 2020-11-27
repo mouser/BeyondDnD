@@ -134,6 +134,12 @@
         
         [self.choices setValuesForKeysWithDictionary: value];
     }
+    else if ([key isEqualToString: @"actions"])
+    {
+        _actions =  [DnDBCharacterActions new];
+        
+        [self.actions setValuesForKeysWithDictionary: value];
+    }
     else
     {
         [super setValue: value

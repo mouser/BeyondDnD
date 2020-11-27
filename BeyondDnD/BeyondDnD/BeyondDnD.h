@@ -43,6 +43,10 @@ FOUNDATION_EXPORT const unsigned char BeyondDnDVersionString[];
 #import <BeyondDnD/DnDBWeightSpeeds.h>
 #import <BeyondDnD/DnDBBackground.h>
 #import <BeyondDnD/DnDBCampaign.h>
+#import <BeyondDnD/DnDBActionRange.h>
+#import <BeyondDnD/DnDBAttackCustomData.h>
+#import <BeyondDnD/DnDBCharacterAction.h>
+#import <BeyondDnD/DnDBCharacterActions.h>
 #import <BeyondDnD/DnDBCharacter.h>
 #import <BeyondDnD/DnDBCharacterCustomItem.h>
 #import <BeyondDnD/DnDBCharacterProxy.h>
