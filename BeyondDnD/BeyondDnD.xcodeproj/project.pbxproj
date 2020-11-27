@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6116C6125706AF00050DF29 /* Ulfrik.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = F65E2C012568393A00FB6542 /* Ulfrik.json */; };
 		F65E2B99256831B100FB6542 /* BeyondDnD.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2B8B256831B100FB6542 /* BeyondDnD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F65E2BC7256831EC00FB6542 /* DnDBCharacterValue.h in Headers */ = {isa = PBXBuildFile; fileRef = F65E2BA5256831EB00FB6542 /* DnDBCharacterValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F65E2BC8256831EC00FB6542 /* DnDBCharacterCustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F65E2BA6256831EB00FB6542 /* DnDBCharacterCustomItem.m */; };
@@ -119,18 +120,19 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		F6B899152568887F00F2EA60 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = .;
+			dstSubfolderSpec = 6;
 			files = (
+				F6116C6125706AF00050DF29 /* Ulfrik.json in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F6B89929256888BB00F2EA60 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 11;
 			files = (
 				F6B89926256888BB00F2EA60 /* BeyondDnD.framework in Embed Frameworks */,
 			);

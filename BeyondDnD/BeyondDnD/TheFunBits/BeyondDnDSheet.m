@@ -9,6 +9,7 @@
 #import "BeyondDnDSheet.h"
 @import Cocoa;
 
+#define kDNDB_CharacterPrefix   @"https://www.dndbeyond.com/character"
 #define kDNDB_CharactersPage    @"https://www.dndbeyond.com/characters/"
 #define kDNDB_SingleCharacter   @"https://www.dndbeyond.com/character/"
 #define kDNDB_JSON_path         @"json"
@@ -164,7 +165,7 @@
 
 + (BOOL) isCharacterPage: (NSString*) urlString
 {
-    return [urlString hasPrefix: kDNDB_CharactersPage];
+    return [urlString hasPrefix: kDNDB_CharacterPrefix];
 }
 
 - (BOOL) loaded

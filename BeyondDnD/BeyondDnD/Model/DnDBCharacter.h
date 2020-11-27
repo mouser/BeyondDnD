@@ -82,7 +82,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 #warning TO DO
 /*
-   
+ Class character.actions.class array not to be confused with class.deinitions.classes array 
+
    "actions": {
      "race": [],
      "class": [
